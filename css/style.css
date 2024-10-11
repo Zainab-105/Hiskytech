@@ -146,3 +146,126 @@
     background-color: #F6F7FC;
 }
 
+/* General Styles for .container-fluid, .container, .row, .col-md-* */
+.container-fluid {
+    padding: 0 15px;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.col-md-10 {
+    width: 83.3333%;
+}
+
+.col-md-8 {
+    width: 66.6666%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+/* Media Queries */
+
+/* Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .col-md-12,
+    .col-md-10,
+    .col-md-8,
+    .col-md-6 {
+        width: 100%;
+    }
+
+    /* Adjust container padding and column width for small screens */
+}
+
+/* Tablet Devices (min-width: 576px and max-width: 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-10 {
+        width: 90%;
+    }
+
+    .col-md-8 {
+        width: 80%;
+    }
+
+    .col-md-6 {
+        width: 60%;
+    }
+}
+
+/* Laptop Devices (min-width: 769px and max-width: 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-10 {
+        width: 83.3333%;
+    }
+
+    .col-md-8 {
+        width: 66.6666%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+/* Full Screen/Desktop Devices (min-width: 992px) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-10 {
+        width: 83.3333%;
+    }
+
+    .col-md-8 {
+        width: 66.6666%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+}
