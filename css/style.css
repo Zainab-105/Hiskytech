@@ -644,3 +644,95 @@ line-height: 150%;
     width: 100px;
     height: auto;
 }
+
+.contact h2 {
+    font-size: 2rem;
+    
+}
+.contact h3 {
+    font-family: 'Roboto', sans-serif;
+     margin-top:10px;
+    color:black;
+}
+.contact p {
+    font-family: 'Mulish', sans-serif;
+    color: #666666;
+}
+
+.contact h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    color:black;
+}
+.contact h5 {
+    font-family: 'Roboto', sans-serif;
+  
+    color:black;
+}
+.contact h6 {
+    font-family: 'Roboto', sans-serif;
+
+    color:black;
+}
+.contact .form-control {
+    padding: 10px;
+   
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form {
+    padding: 20px;
+    background-color: white;
+  
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+}
+
+.contact-form .btn {
+    background-color: rgb(10,58,143);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    width: 390px;
+    height: 40px;
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3;
+}
+
+.contact .row {
+    margin-bottom: 20px;
+}
+.custom-input {
+    width: 187px;
+    height: 40px;
+}
+.custom-input {
+    width: 390px;
+    height: 40px;
+    font-family: Arial, FontAwesome;
+    font-size: 16px;
+}
+.custom-textarea {
+    width: 390px;
+    height: 105px;
+}
+
+.custom-heading {
+    font-size: 16px;
+    font-weight: 600; /* Semi-bold */
+    font-family: 'Roboto', sans-serif;
+    padding-bottom:30px ;
+    text-decoration: underline;
+    padding-top: 30px;
+}
