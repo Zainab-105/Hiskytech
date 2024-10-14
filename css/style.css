@@ -526,6 +526,7 @@
     }
 }
 
+
 .engagment-card {
     margin-top: 30px;
     margin-bottom: 75px;
@@ -640,4 +641,409 @@
 
 .idea-img img {
     margin-top: 50px;
+}
+/* section recent-projects */
+
+.recent-projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    width: 100%; /* Using 100% to make it responsive */
+    height: auto; /* Allowing height to adjust automatically */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+hr {
+    border: 1px solid rgba(10, 58, 143, 0.3);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 48px;
+    font-weight: 700; /* Using numeric value for consistency */
+    color: black;
+}
+
+.section-paragraph,
+.custom-paragraph {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 18px;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+}
+
+.custom-paragraph {
+    color: lightgray;
+    font-weight: 500;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 374px;
+    height: 441px;
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: #f8f9fa;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-light-gray {
+    background-color: lightgray;
+    color: black;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-body img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+.engagment-card {
+    margin-top: 30px;
+    margin-bottom: 75px;
+}
+
+.engagment-card h6 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.engagment-card p {
+    font-size: 16px;
+}
+
+.engagment-card-img img {
+    margin-left: 30px;
+}
+
+/* our team section */
+.team {
+    margin-bottom: 150px;
+}
+
+.team-text {
+    font-size: 18px !important;
+    padding-top: 12px;
+    line-height: 150%;
+}
+
+
+.team-card {
+    position: relative;
+    width: 22%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.front-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+.back-img {
+    background: linear-gradient(360deg, #0A3A8F, #37B6BF);
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.team-card:hover .front-img {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+}
+
+.team-card:hover .back-img {
+    opacity: 1;
+}
+.card-content h3{
+    padding-top: 15px;
+    
+    line-height: 150%;
+    color: white;
+}
+.card-content p{
+    color: white;
+}
+.card-social i{
+    font-size: 26px;
+   padding-top: 13px;
+    background-color: #577ba5;
+    height: 50px;
+    width: 50px;
+   border-radius: 50%;
+    color: white;
+}
+/* idea section */
+.ideas {
+    margin-bottom: 150px;
+}
+
+.idea-heading h4 {
+    font-size: 37px;
+    font-weight: bold;
+ 
+    line-height: 150%
+}
+
+.idea-p {
+    font-size: 17px;
+    padding: 30px;
+    line-height: 150%;
+}
+
+.idea-img img {
+    margin-top: 50px;
+}
+
+
+/* section recent-projects */
+
+.recent-projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+    width: 374px;
+    height: 380px;
+   
+  }
+  
+  .card-body p {
+    font-size: 1rem;
+    color: #555;
+    
+  }
+  
+  .card-img-top {
+    border-radius: 10px 10px 0 0;
+  }
+  
+ 
+  
+  .card {
+    text-align: center; /* Center text in card body */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+  }
+  
+  hr {
+      border: 1px solid rgba(10, 58, 143, 0.3); /* Light color with some transparency */
+      width: 50%; /* Width of the line */
+      margin: 0 auto; /* Center the line */
+  }
+  
+  
+  .section-heading {
+        text-align: center;
+        margin-bottom: 1.5rem; /* Adjust spacing as needed */
+        font-size: 48px; /* Font size for the heading */
+        font-weight: bold; /* Use a valid weight like 700 or 800 */
+        color: black; /* Adjust the color to match your theme */
+    }
+  
+    .section-paragraph {
+        text-align: center;
+        margin-bottom: 3rem; /* Adjust spacing as needed */
+        font-size: 18px; /* Font size for the paragraph */
+        color: black;
+        font-family: 'Mulish', sans-serif;
+       font-weight: 400;
+    }
+
+    .custom-paragraph {
+        font-size: 18px; /* Adjust the font size */
+        color:lightgray; /* Text color */
+ 
+        font-weight: 500; /* Regular font weight */
+        text-align: center; /* Center the text */
+    
+       
+        font-family: 'Mulish', sans-serif;
+    }
+    
+
+    .flip-card {
+        background-color: transparent;
+        width: 374px;
+        height: 441px;
+        perspective: 1000px; /* Perspective to give 3D effect */
+        margin-bottom: 30px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+      
+      .flip-card:hover .flip-card-inner,
+      .flip-card.flipped .flip-card-inner {
+        transform: rotateY(180deg); /* Flipping effect */
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; /* Hide the back when front is shown */
+      }
+      
+      .flip-card-back {
+        background-color: #f8f9fa;
+        color: black;
+        transform: rotateY(180deg);
+      }
+      
+      .card {
+        margin-bottom: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: none;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      
+      .card-body p {
+        font-size: 1rem;
+        color: #555;
+      }
+      
+      hr {
+        border: 1px solid rgba(10, 58, 143, 0.3);
+        width: 50%;
+        margin: 0 auto;
+      }
+      
+      .section-heading {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 48px;
+        font-weight: bold;
+        color: black;
+      }
+      
+      .section-paragraph {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 18px;
+        color: black;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+      }
+
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .btn-light-gray {
+        background-color: lightgray;
+        color: black;
+    }
+    
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+    }
+
+
+.card-body img {
+    width: 100px;
+    height: auto;
 }
