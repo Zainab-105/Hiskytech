@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Custom CSS for borders */
+
 .service-container {
     display: flex;
     justify-content: center;
@@ -13,15 +13,15 @@
     flex-direction: column;
     position: relative;
     height: 400px;
-    /* Adjust based on your design */
+
 }
 
 .central-icon {
     width: 80px;
-    /* Central icon size */
+
     height: 80px;
     margin-bottom: 20px;
-    /* Reduced space below central icon */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,52 +31,52 @@
 .service {
     position: absolute;
     padding: 5px 10px;
-    /* Reduced padding */
+
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     font-size: 14px;
-    /* Smaller font size */
+
 }
 
 .graphic-design {
     top: 8%;
     left: 38%;
     transform: translateY(-50%);
-    /* Center vertically */
+
 }
 
 .app-development {
     top: 17%;
     right: 166%;
     transform: translateY(-50%);
-    /* Center vertically */
+ 
 }
 
 .ui-ux-design {
     bottom: 14%;
     left: 30%;
-    /* Adjusted for better spacing */
+
     transform: translateY(50%);
-    /* Center vertically */
+
 }
 
 .web-development {
     bottom: 25%;
     right: 200%;
-    /* Adjusted for better spacing */
+
     transform: translateY(50%);
-    /* Center vertically */
+
 }
 
 .service-icon {
     width: 30px;
-    /* Icon size */
+   padding: 10px;
     height: 30px;
     margin-right: 5px;
-    /* Reduced space between icon and text */
+
 }
 
 .line {
@@ -185,11 +185,11 @@
 
 /* service section styling */
 .services {
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 135px;
 }
 
-/* Default styling for large screens (desktop) */
+
 .service-heading {
     width: 719px;
     display: flex;
@@ -210,7 +210,10 @@
 
 .service-heading p {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    color: #666666;
+    line-height: 150%;
+    padding-top: 30px;
 }
 
 
@@ -327,11 +330,17 @@
 
 .service-left p {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    color: #666666;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
     line-height: 150%;
 }
 
 /* empowring journey section */
+.empower{
+    margin-top: 200px;
+}
 .empower-right {
     margin-bottom: 150px;
 }
@@ -344,6 +353,7 @@
 }
 
 .empower-right p {
+    color: #666666;
     padding-top: 20px;
     font-size: 16px;
     line-height: 150%;
@@ -445,7 +455,7 @@
 
 /* engagment model section */
 .engagment-model {
-    margin-top: 85px;
+    margin-top: 200px;
     margin-bottom: 150px;
 
 }
@@ -642,122 +652,6 @@
 .idea-img img {
     margin-top: 50px;
 }
-/* section recent-projects */
-
-.recent-projects h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-.card {
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: none;
-    width: 100%; /* Using 100% to make it responsive */
-    height: auto; /* Allowing height to adjust automatically */
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Align children vertically */
-    justify-content: center;
-    align-items: center;
-}
-
-.card-body p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.card-img-top {
-    border-radius: 10px 10px 0 0;
-}
-
-hr {
-    border: 1px solid rgba(10, 58, 143, 0.3);
-    width: 50%;
-    margin: 0 auto;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 48px;
-    font-weight: 700; /* Using numeric value for consistency */
-    color: black;
-}
-
-.section-paragraph,
-.custom-paragraph {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 18px;
-    color: black;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 400;
-}
-
-.custom-paragraph {
-    color: lightgray;
-    font-weight: 500;
-}
-
-.flip-card {
-    background-color: transparent;
-    width: 374px;
-    height: 441px;
-    perspective: 1000px;
-    margin-bottom: 30px;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner,
-.flip-card.flipped .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flip-card-back {
-    background-color: #f8f9fa;
-    color: black;
-    transform: rotateY(180deg);
-}
-
-.btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-light-gray {
-    background-color: lightgray;
-    color: black;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    color: white;
-}
-
-.card-body img {
-    width: 100px;
-    height: auto;
-}
-
 
 
 .engagment-card {
@@ -878,7 +772,9 @@ hr {
 
 
 /* section recent-projects */
-
+.recent-projects{
+    background-color: #F6F7FC;
+}
 .recent-projects h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -922,30 +818,27 @@ hr {
   
   .section-heading {
         text-align: center;
-        margin-bottom: 1.5rem; /* Adjust spacing as needed */
-        font-size: 48px; /* Font size for the heading */
-        font-weight: bold; /* Use a valid weight like 700 or 800 */
-        color: black; /* Adjust the color to match your theme */
+        margin-bottom: 1.5rem; 
+        font-size: 48px;
+        font-weight: bold; 
+        color: black;
     }
   
     .section-paragraph {
         text-align: center;
-        margin-bottom: 3rem; /* Adjust spacing as needed */
-        font-size: 18px; /* Font size for the paragraph */
-        color: black;
-        font-family: 'Mulish', sans-serif;
+        margin-bottom: 3rem;
+        font-size: 18px; 
+        color: #666666;
        font-weight: 400;
     }
 
     .custom-paragraph {
-        font-size: 18px; /* Adjust the font size */
-        color:lightgray; /* Text color */
+        font-size: 18px;
+        color:#666666;
  
-        font-weight: 500; /* Regular font weight */
-        text-align: center; /* Center the text */
+        font-weight: 500; 
+        text-align: center;
     
-       
-        font-family: 'Mulish', sans-serif;
     }
     
 
@@ -953,7 +846,7 @@ hr {
         background-color: transparent;
         width: 374px;
         height: 441px;
-        perspective: 1000px; /* Perspective to give 3D effect */
+        perspective: 1000px;
         margin-bottom: 30px;
       }
       
@@ -975,7 +868,7 @@ hr {
         position: absolute;
         width: 100%;
         height: 100%;
-        backface-visibility: hidden; /* Hide the back when front is shown */
+        backface-visibility: hidden; 
       }
       
       .flip-card-back {
@@ -998,7 +891,7 @@ hr {
       
       .card-body p {
         font-size: 1rem;
-        color: #555;
+        color: #666;
       }
       
       hr {
@@ -1020,8 +913,7 @@ hr {
         margin-bottom: 3rem;
         font-size: 18px;
         color: black;
-        font-family: 'Mulish', sans-serif;
-        font-weight: 400;
+    
       }
 
 
