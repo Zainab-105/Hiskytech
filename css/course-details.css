@@ -1,0 +1,882 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/* Section Styling */
+.custom-section {
+  width: 100%;
+ margin-top: 70px;
+    padding: 92px 0px;
+    opacity: 1; /* Set to make visible */
+    background: #F6F7FC;
+
+}
+
+/* Container Styling */
+/* .container {
+    display: flex;
+    justify-content: center;
+} */
+
+/* Row Styling */
+/* .row {
+    display: flex;
+    gap: 64px;
+    width: 100%;
+    max-width: 1152px;
+    height: auto;
+} */
+
+/* First Div (Text Content) */
+.text-content {
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    opacity: 1; /* Set to make visible */
+}
+
+.text-content h4 {
+font-family: Roboto, sans-serif;
+font-size: 31px;
+font-weight: 700;
+line-height: 41.6px;
+text-align: left;
+margin: 0;
+}
+
+
+.text-content p {
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+margin: 0;
+}
+
+
+.icon-text-group {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.icon-text-group i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.icon-text-group span {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.custom-button {
+width: 166px; /* Fixed width */
+height: 44px; /* Fixed height */
+padding: 8px 15px; /* Padding based on provided design */
+gap: 4px;
+border-radius: 8px; /* Adjusted per design */
+background-color: var(--Brand-color, #0A3A8F); /* Primary brand color background */
+opacity: 1; /* Ensuring visibility */
+border-radius: 8px;
+/* Typography */
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #FFFFFF; /* Text color */
+cursor: pointer;
+border: 0;
+outline: none;
+margin-top: 44px;
+}
+
+
+
+/* Second Div (Image Content) */
+.image-content {
+    width: 388px;
+    height: 268px;
+    border-radius: 24px 0 0 0;
+    opacity: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.custom-layout-section {
+    width: 100%;
+    max-width: 1440px;
+  
+    padding: 92px 0px;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+/* Container Styling */
+.custom-layout-container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+/* Row Styling */
+.custom-layout-row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+/* First Column Styling */
+.custom-column-1 {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.custom-column-1 h4 {
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+/* Icon Text Styling */
+.custom-icon-text {
+    display: flex;
+
+    gap: 8px;
+}
+
+.custom-icon-text i {
+    width: 17.5px;
+    height: 13.41px;
+    color: #0A3A8F; /* Adjust icon color */
+}
+
+.custom-icon-text span {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #333; /* Adjust text color */
+}
+
+/* Second Column Styling */
+.custom-column-2 {
+    width: 534px;
+    height: 301px;
+    border-radius: 24px ;
+    background-color: var(--Border-secondary, #AAAAAA);
+    overflow: hidden;
+    margin: auto;
+}
+
+.custom-column-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjust Heading Style */
+.custom-layout-container h4 {
+
+gap: 0;
+opacity: 1; /* Set opacity to 1 to make it visible */
+font-family: Roboto, sans-serif;
+font-size: 32px;
+font-weight: 700;
+line-height: 41.6px;
+text-align: left;
+
+color: black; /* Optional: text color for better contrast */
+/* Add padding for spacing inside the background */
+border-radius: 4px; /* Optional: rounded corners */
+margin-bottom: 24px; /* Spacing below the heading */
+}
+
+.checkmark-icon {
+width: 17.5px;  /* Set the width */
+height: 13.41px; /* Set the height */
+}
+/* Main Section */
+.main-section {
+width: 100%;
+
+padding: 162px 144px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+background: #FFFFFF;
+
+}
+
+/* Content Container */
+
+
+/* Title Text */
+.title-text {
+width: 441px;
+font-family: 'Roboto', sans-serif;
+font-size: 24px;
+font-weight: 500;
+line-height: 28px;
+margin-bottom: 32px;
+}
+
+/* Icon-Text Group Styling */
+.icon-text-group {
+display: flex;
+gap: 32px;
+margin-bottom: 24px;
+}
+
+.icon-text-item {
+display: flex;
+gap: 8px;
+}
+
+.small-icon {
+width: 24px;
+height: 24px;
+}
+
+.text-regular {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+
+/* Table Box */
+
+
+.table-box {
+width: 1152px;                /* Fixed width */
+        /* Fixed height */
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 0px;                     /* No gap between items */
+padding: 24px ;          /* Padding on top only */
+/* Light border color */
+border-radius: 24px ;    /* Rounded top-left corner */
+opacity: 1; 
+margin-top: 24px;  
+background: #F6F7FC;
+        /* Set to fully visible */
+}
+
+
+.table-item {
+display: flex;
+align-items: center;
+gap: 20px;
+width: 100%;
+position: relative;
+}
+
+/* Icon Image Before Text */
+.table-icon-image {
+width: 44px;
+height: 44px;
+padding: 3.67px 3.6px 0.34px 5.5px;
+}
+
+/* Main and Secondary Text */
+.text-group {
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.table-main-text {
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 28px;
+text-align: left;
+}
+
+.table-secondary-text {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+
+/* Arrow Icon at Bottom */
+.table-arrow-icon {
+position: absolute;
+right: 10px;
+
+font-size: 20px;
+color: #333;
+}
+
+
+/* section 4 */
+/* Main section styling */
+.section {
+    position: absolute;
+    width: 860px;
+    height: 600px;
+    top: 150px;
+    left: 290px;
+    display: flex;
+    border-radius: 24px 0 0 0;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Container and Row */
+/* .container {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    height: 600px;
+} */
+.row-row1 {
+    display: flex;
+    width: 100%;
+    
+}
+
+/* Left div */
+.left-div{
+    width: 430px;
+    height: 600px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    background: var(--2nd-brand, #F6F7FC);
+
+    border-radius: 24px 0 0 24px;
+    opacity: 1;
+}
+ .right-div {
+    width: 430px;
+    height: 600px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 24px 0 0 24px;
+    opacity: 1;
+}
+
+/* Text styles */
+.text-regular {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #666666;
+}
+.text-medium {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+.heading-h5 {
+    padding-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    color: var(--Brand-color, #0A3A8F);
+    ;
+}
+
+/* Image styling */
+.image {
+width: 7.1px;
+height: 15.84px;
+
+
+}
+
+
+/* Layout for nested content */
+
+.course-title {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: black;
+padding-top: 44px;
+}
+.course-title1 {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #0A3A8F;
+padding-top: 27px;
+}
+
+
+.course-details {
+display: flex;
+align-items: center;
+gap: 8px;
+margin-top: 16px;
+}
+
+.course-thumbnail {
+width: 80px;
+height: 60px;
+border-radius: 8px 0 0 0;
+}
+
+.course-name {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+
+.price-info {
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin-top: 54px;
+}
+
+.price-label {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+
+.price-amount {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+
+
+.details-section {
+width: 382px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.section-heading {
+font-size: 16px;
+font-weight: 500;
+}
+
+.arrow-icon {
+width: 16px;
+height: 16px;
+transform: rotate(-180deg);
+}
+
+.info-text {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400; /* Regular weight */
+line-height: 24px;
+text-align: left;
+color: #666666; /* Gray color */
+margin-top: 32px;
+}
+
+
+.form-section {
+display: flex;
+flex-direction: column;
+
+}
+.input-container {
+position: relative;
+width: 100%;
+max-width: 283px;
+}
+
+/* Icon styling */
+.input-icon3 {
+position: absolute;
+left: 10px;
+top: 68%;
+transform: translateY(-50%);
+width: 24px; /* Adjust width as needed */
+height: 24px; /* Adjust height as needed */
+color: #AAAAAA; /* Color can be adjusted */
+}
+/* Input field styling */
+.input-field {
+Width:283px;
+Height:40px;
+margin-top: 24px;
+padding-left: 40px;
+font-size: 16px;
+font-family: Roboto, sans-serif;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+border: 1px solid var(--levels-gray, #E4E4E4);
+border-radius: 8px;
+background: var(--Border-alternate, #FFFFFF);
+color: #333; /* Adjust text color if needed */
+outline: none; /* Remove default outline */
+}
+
+/* Optional: Focus effect */
+.input-field:focus {
+border-color: #0A3A8F; /* Accent color on focus */
+}
+
+.checkbox-container {
+display: flex;
+align-items: center;
+gap: 8px;
+margin-top: 24px;
+
+}
+
+/* Checkbox text styling */
+.checkbox-text {
+font-family: Roboto, sans-serif;
+font-size: 16px; /* Set font size to 16px */
+font-weight: 400; /* Regular weight */
+line-height: 24px;
+text-align: left;
+color: #666666; /* Dark gray text color */
+padding-top: 20px;
+/* Optional padding for background appearance */
+border-radius: 4px; /* Optional for rounded effect */
+}
+
+
+.medium-text-section {
+width: 382px;
+margin-top: 16px;
+display: flex;
+flex-direction: column;
+}
+
+.box-row {
+display: flex;
+justify-content: center;
+
+width: 382px; /* Ensures the button width fills the specified space */
+}
+
+.box-button {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 382px; /* Fixed width for the button */
+height: 52.8px; /* Fixed height for the button */
+padding: 8px 20px;
+gap: 4px;
+border-radius: 8px;
+border: 1px solid var(--Brand-color, #0A3A8F);
+background-color: transparent;
+cursor: pointer;
+opacity: 1; /* Set opacity to 1 to ensure visibility */
+transition: opacity 0.3s ease, transform 0.3s ease;
+margin-top: 16px;
+}
+
+
+.box-image {
+width: auto;
+height: 100%; /* Image fills button height */
+opacity: 0; /* Initial opacity as specified */
+}
+
+.box-button .box-image {
+opacity: 1; 
+transform: scale(1.1); 
+}
+
+.submit-button {
+width: 382px; 
+height: 52.8px; 
+margin-top: 56px;
+margin-bottom: 30px;
+padding: 8px 20px;
+gap: 4px;
+border-radius: 8px; 
+background-color: var(--Dark-gray, #666666); 
+color: #fff; 
+border: none;
+cursor: pointer;
+font-size: 14px;
+opacity: 1; 
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.row-container {
+display: flex;
+align-items: center; /* Aligns items vertically in the center */
+gap: 10px; /* Adjust spacing between items as needed */
+}
+
+.section-heading {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500; /* Regular weight */
+line-height: 24px;
+text-align: left;
+color: black; /* Blue color */
+/* Removes default paragraph margin */
+}
+.section-heading1 {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400; /* Regular weight */
+line-height: 24px;
+text-align: left;
+color: #0A3A8F; /* Blue color */
+/* Removes default paragraph margin */
+}
+.arrow-icon {
+Width:7.1px;
+height: 15.84px;
+}
+
+/* Overlay background for the popup */
+.popup-section {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+
+align-items: center;
+justify-content: center;
+background: rgba(0, 0, 0, 0.5);
+z-index: 1000;
+}
+
+/* Popup container styling */
+.popup-container {
+background: white;
+width: 860px;
+height: 85vh;
+border-radius: 24px;
+overflow: hidden;
+overflow-y: auto;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+position: relative; 
+margin-top: 89px;
+border-radius: 8px;
+}
+
+
+/* Close button styling */
+.close-button {
+font-size: 24px;
+font-weight: bold;
+cursor: pointer;
+position: absolute;
+top: 20px;
+right: 20px;
+color: #666;
+}
+
+/* section 5 */
+.upload-section {
+margin-top: 24px;
+position: relative;
+display: inline-flex;
+align-items: center;
+}
+
+.upload-label {
+display: inline-flex;
+align-items: center;
+padding: 8px 15px 8px 20px;
+width: 114px;
+height: 44px;
+gap: 4px;
+background-color: #f0f0f0; /* Adjust to your background color */
+border-radius: 8px 0 0 0;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #333; /* Text color */
+cursor: pointer;
+}
+
+.upload-label .icon {
+width: 24px;
+height: 24px;
+padding: 2px 3px;
+}
+
+.upload-input {
+opacity: 0;
+position: absolute;
+left: 0;
+top: 0;
+width: 114px;
+height: 44px;
+cursor: pointer;
+}
+
+.upload-section {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.upload-header {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+
+}
+
+.upload-label {
+display: inline-flex;
+align-items: center;
+padding: 8px 15px 8px 20px;
+width: 114px;
+height: 44px;
+gap: 4px;
+background-color: #f0f0f0; /* Adjust as needed */
+border-radius: 8px 0 0 0;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 500;
+color: #333;
+cursor: pointer;
+}
+
+.upload-label .upload-icon {
+width: 24px;
+height: 24px;
+padding: 2px 3px;
+}
+
+.upload-input {
+opacity: 0;
+position: absolute;
+left: 0;
+top: 0;
+width: 114px;
+height: 44px;
+cursor: pointer;
+}
+.popup-section3 {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.popup-container-single3 {
+position: absolute; 
+width: 600px;
+height: 400px;
+background-color: #fff;
+border-radius: 24px;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0px; 
+opacity: 1; 
+}
+
+
+.close-button3 {
+position: absolute;
+top: 16px;
+right: 16px;
+font-size: 20px;
+cursor: pointer;
+color: #333;
+}
+
+.single-div3 {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+
+height: auto; /* Auto height (to "hug" the content) */
+text-align: center;
+
+
+opacity: 1; /* Set to visible */
+
+}
+
+.popup-image3 {
+display: block;
+margin: 0 auto;
+}
+
+.popup3-heading{
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+    text-align: left;
+    
+
+}
+.popup3-text{
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #666;
+
+}

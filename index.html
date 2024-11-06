@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HiSkyTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 </head>
 
 <body>
@@ -47,7 +50,7 @@
                                     <a class="nav-link" href="#services">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#projects">Projects</a>
+                                    <a class="nav-link" href="projects.html">Projects</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#our-team">Our Team</a>
@@ -58,10 +61,11 @@
                 </div>
 
                 <!-- Third Column: Contact Us Button -->
-                <div class="col-md-3 text-center">
-                    <a href="#contact" class="btn btn-outline"
-                        style="border-color: rgb(10,58,143); color: rgb(10,58,143);">
-                        Contact Us <i class="fas fa-arrow-right arrow-icon"></i>
+                <div class="col-md-3 text-center contact">
+               
+                    <a href="#contact" class=" mt-3 "
+                        style="background-color: rgb(10,58,143); height: 44px; width: 158px; border-radius: 8px; ">
+                        SignUp or Login
                     </a>
                 </div>
             </div>
@@ -73,9 +77,7 @@
     <section class="section-B">
 
         <div class="container">
-            <!-- Second Row: Heading, Paragraph, Button, and Image -->
-            <div class="row  d-flex justify-content-center align-items-center">
-                <!-- First Column: Heading, Paragraph, and Button -->
+            <div class="row ">
                 <div class="col-md-6 box1">
                     <h2
                         style="font-size: 48px; font-weight: bold; line-height: 120%; font-family: 'Roboto', sans-serif;">
@@ -86,10 +88,9 @@
                         </span>
                     </h2>
 
-                    <!-- Flower Icon and Paragraph Inline -->
-                    <div class="pt-3 box1" style="font-size: 14px; position: relative;">
-                        <img src="image/Style.png" alt="Flower Icon"
-                            style="width: 24px; height: 24px; color: rgb(10,58,143); position: absolute; left: -30px; top: 20px;">
+                    <div class="pt-3 box1 pl-2" style="font-size: 14px; position: relative; ">
+                        <img src="image/Style.png" alt="Flower Icon" class="spinner-icon">
+
                         <p>
                             We are a group of professional, experienced and <br>
                             enthusiastic IT individuals who are committed to create a <br>
@@ -98,12 +99,13 @@
                         </p>
                     </div>
 
-                    <!-- Button -->
-                    <a href="#contact" class="btn btn-primary mt-3" style="background-color: rgb(10,58,143);">
-                        Contact Us <i class="fas fa-arrow-right arrow-icon"></i>
-                    </a>
 
-                    <!-- Trusted Section After Button -->
+                    <div class="col-md-3 text-center contact">
+                        <a href="https://wa.me/923186362759" target="_blank" class="mt-3"
+                        style="background-color: rgb(10,58,143); height: 44px; width: 142px; border-radius: 8px;">
+                        Contact Us <i class="fas fa-arrow-right arrow-icon"></i>
+                     </a>
+                    </div>
                     <div class="trusted-text mt-4 box1" style="font-size: 18px;">
                         <img src="image/avtar.png" alt="Trusted Icon"
                             style="width: 88px; height: 44px; margin-right: 8px; vertical-align: middle;">
@@ -111,13 +113,14 @@
                     </div>
                 </div>
 
-                <!-- Second Column: Mind Map Image -->
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
                     <img src="image/Group 7.png" alt="" style="margin-top: 80px; height: auto;">
                 </div>
             </div>
         </div>
     </section>
+
+
     <section class="services">
         <div class="container">
             <div class="service-heading">
@@ -246,636 +249,235 @@
         </div>
     </section>
 
-    <section class="recent-projects ">
-        <!-- Section Heading -->
-        <h1 class="section-heading">Our Recent Projects</h1>
-        <p class="section-paragraph">Explore the innovative solutions we’ve delivered.</p>
-      
-        <div class="container">
-          <div class="row justify-content-center">
-            <!-- Card 1 (with flip effect) -->
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="flip-card">
-                    <div class="flip-card-inner" id="card2">
-                        <div class="flip-card-front card">
-                            <div class="image-container d-flex justify-content-center align-items-center" style="height: 82px;">
-                                <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt="" class="card-img-top img-fluid mt-5" style="max-width: 100%; height: auto;">
-                            </div>
-                            <hr class="m-auto mt-5">
-                            <div class="card-body">
-                                <p class="card-text pt-5">A collaboration hub that connects <br> teams through channels, making <br> communication and project <br> management seamless.</p>
-                            </div>
-                        </div>
-            
-                        <!-- Back of the second card -->
-                        <div class="flip-card-back card">
-                            <div class="card-body d-flex flex-column ">
-                                <!-- Add an image centered -->
-                                <div class="image-container  mt-5 ">
-                                    <img src="image/slack 1.png" alt="Software Icon" class="img-fluid" style="max-width: 150px;">
-                                </div>
-                                <!-- Button for communication software -->
-                                <button class="btn btn-light-gray  mt-5 " style="background-color: lightgray; border-radius: 50px; font-size: 16px;">Communication Software</button>
-                                <!-- Button for viewing project details -->
-                                <button class="btn btn-primary mt-5" style="border-radius: 50px;">View Project Details</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Duplicate the other cards as before -->
-            <!-- Card 2 -->
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="flip-card">
-                  <div class="flip-card-inner" id="card1">
-                    <div class="flip-card-front card">
-                      <div class="image-container d-flex justify-content-center align-items-center" style="height: 82px;">
-                        <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt="" class="card-img-top img-fluid mt-5" style="max-width: 100%; height: auto;">
-                      </div>
-                      <hr class="m-auto mt-5">
-                      <div class="card-body">
-                        <p class="card-text pt-5">A collaboration hub that connects <br> teams through channels, making <br> communication and project <br> management seamless.</p>
-                      </div>
-                    </div>
-        
-                      <!-- Back of the second card -->
-                      <div class="flip-card-back card">
-                        <div class="card-body d-flex flex-column ">
-                            <!-- Add an image centered -->
-                            <div class="image-container  mt-5 ">
-                                <img src="image/slack 1.png" alt="Software Icon" class="img-fluid" style="max-width: 150px;">
-                            </div>
-                            <!-- Button for communication software -->
-                            <button class="btn btn-light-gray  mt-5 " style="background-color: lightgray; border-radius: 50px;">Communication Software</button>
-                            <!-- Button for viewing project details -->
-                            <button class="btn btn-primary mt-5" style="border-radius: 50px;">View Project Details</button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-            <!-- Card 3 -->
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="flip-card">
-                  <div class="flip-card-inner" id="card1">
-                    <div class="flip-card-front card">
-                      <div class="image-container d-flex justify-content-center align-items-center" style="height: 82px;">
-                        <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt="" class="card-img-top img-fluid mt-5" style="max-width: 100%; height: auto;">
-                      </div>
-                      <hr class="m-auto mt-5">
-                      <div class="card-body">
-                        <p class="card-text pt-5">A collaboration hub that connects <br> teams through channels, making <br> communication and project <br> management seamless.</p>
-                      </div>
-                    </div>
-        
-                     <!-- Back of the second card -->
-                     <div class="flip-card-back card">
-                        <div class="card-body d-flex flex-column ">
-                            <!-- Add an image centered -->
-                            <div class="image-container  mt-5 ">
-                                <img src="image/slack 1.png" alt="Software Icon" class="img-fluid" style="max-width: 100%;">
-                            </div>
-                            <!-- Button for communication software -->
-                            <button class="btn btn-light-gray  mt-5 " style="background-color: lightgray; border-radius: 50px;">Communication Software</button>
-                            <!-- Button for viewing project details -->
-                            <button class="btn btn-primary mt-5" style="border-radius: 50px;">View Project Details</button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
+
+    <section class="achievements-section">
+        <div class="image-container">
+            <img src="image/Frame 116.png" alt="HiSkyTech Logo">
         </div>
-      </section>
-    
-    <section class="empower">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="empower-right">
-                        <h4 style="display: inline-block;">Empower Your Digital Journey with
-                            <span class="color-hi-tech">Hi</span><span class="color-sky">Sky</span><span
-                                class="color-hi-tech">Tech</span>.
-                        </h4>
-                        <p>Leading the Way in IT Solutions and Digital Education, Empowering Businesses and Individuals
-                            with Cutting-Edge Technology and Skills.</p>
+        <div class="text-container">
+            <h2>Achievements</h2>
+            <p style="display: inline;">
+                At
+            <h5 style="display: inline;"><span class="color-hi-tech">Hi</span><span class="color-sky">Sky</span><span
+                    class="color-hi-tech">Tech</span></h5>, we take pride in our journey, marked by significant
+                milestones
+                and achievements. Our commitment to excellence has propelled us to deliver innovative IT solutions
+                that empower businesses.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>75%</h3>
+                        <p>Client satisfaction rate based on feedback surveys.</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>On-time project delivery across all our services.</p>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <section class="stats-section">
-                        <div class="stats-container">
-                            <!-- Experience -->
-                            <div class="stat-bar">
-                                <div class="stat-bar-fill experience">
-                                    <div class="stat-text">
-                                        <p>5+</p>
-                                        <span>Years</span>
-                                    </div>
+        </div>
+    </section>
+
+    <section class="recent-projects-section">
+        <!-- Section Heading -->
+        <h1 class="recent-projects-heading">Our Recent Projects</h1>
+        <p class="recent-projects-paragraph">Explore the innovative solutions we’ve delivered.</p>
+
+        <div class="recent-projects-container">
+            <div class="row justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="recent-flip-card">
+                        <div class="recent-flip-card-inner" id="card1">
+                            <div class="recent-flip-card-front recent-project-card">
+                                <div class="recent-image-container d-flex justify-content-center align-items-center"
+                                    style="height: 82px;">
+                                    <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt=""
+                                        class="recent-card-img-top img-fluid mt-5"
+                                        style="max-width: 100%; height: auto;">
                                 </div>
-                                <p class="stat-label">Experience</p>
+                                <hr class="mt-5" style="width: 50%; margin: auto;">
+                                <div class="card-body">
+                                    <p class="recent-card-text pt-5">A collaboration hub that connects <br> teams
+                                        through channels, making <br> communication and project <br> management
+                                        seamless.</p>
+                                </div>
                             </div>
 
-                            <!-- Projects -->
-                            <div class="stat-bar">
-                                <div class="stat-bar-fill projects">
-                                    <div class="stat-text">
-                                        <p>300+</p>
-                                        <span>Delivered</span>
+                            <!-- Back of the first card -->
+                            <div class="recent-flip-card-back recent-project-card-back">
+                                <div class="card-body">
+                                    <div class="recent-image-container mt-5">
+                                        <img src="image/slack 1.png" alt="Software Icon" class="img-fluid"
+                                           >
                                     </div>
-                                </div>
-                                <p class="stat-label">Projects</p>
-                            </div>
+                                    <h4 class="recent-text">Slack</h4>
+                                    <div class="backbuttons">
+                                        <a href="#" class="btn-light-gray mt-3 text-center"
+                                            style="border-radius: 50px; display: block; line-height: 38px; ">Communication Software</a>
+                                        <a href="#" class=" btn-blue mt-5 text-center"
+                                            style="border-radius: 50px; display: block;" class=" btn-blue mt-5"
+                                            style="border-radius: 50px; line-height: 32px;">View Project Details</a>
+                                    </div>
 
-                            <!-- Customer -->
-                            <div class="stat-bar">
-                                <div class="stat-bar-fill customer">
-                                    <div class="stat-text">
-                                        <p>4.9/5</p>
-                                        <span>Satisfaction</span>
-                                    </div>
-                                </div>
-                                <p class="stat-label">Customer</p>
-                            </div>
 
-                            <!-- Students -->
-                            <div class="stat-bar" style="background-color:  #37B6BF;  ">
-                                <div class="stat-bar-fill students">
-                                    <div class="stat-text" style="background-color:#cdedef;">
-                                        <p>200+</p>
-                                        <span>Trained</span>
-                                    </div>
                                 </div>
-                                <p class="stat-label">Students</p>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </div>
+
+                <!-- Repeat Card 2 and Card 3 similarly with updated class names -->
+                <!-- Card 2 -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="recent-flip-card">
+                        <div class="recent-flip-card-inner" id="card2">
+                            <div class="recent-flip-card-front recent-project-card">
+                                <div class="recent-image-container d-flex justify-content-center align-items-center"
+                                    style="height: 82px;">
+                                    <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt=""
+                                        class="recent-card-img-top img-fluid mt-5"
+                                        style="max-width: 100%; height: auto;">
+                                </div>
+                                <hr class="mt-5" style="width: 50%; margin: auto;">
+                                <div class="card-body">
+                                    <p class="recent-card-text pt-5">A collaboration hub that connects <br> teams
+                                        through channels, making <br> communication and project <br> management
+                                        seamless.</p>
+                                </div>
+                            </div>
+
+                            <!-- Back of the second card -->
+                            <div class="recent-flip-card-back recent-project-card-back">
+                                <div class="card-body">
+                                    <div class="recent-image-container mt-5">
+                                        <img src="image/slack 1.png" alt="Software Icon" class="img-fluid"
+                                           >
+                                    </div>
+                                    <h4 class="recent-text">Slack</h4>
+                                    <div class="backbuttons">
+                                        <a href="#" class="btn-light-gray mt-3 text-center"
+                                            style="border-radius: 50px; display: block; line-height: 38px;">Communication Software</a>
+                                        <a href="#" class=" btn-blue mt-5 text-center"
+                                            style="border-radius: 50px; display: block;" class=" btn-blue mt-5"
+                                            style="border-radius: 50px; line-height: 32px;">View Project Details</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 (same as above) -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="recent-flip-card">
+                        <div class="recent-flip-card-inner" id="card3">
+                            <div class="recent-flip-card-front recent-project-card">
+                                <div class="recent-image-container d-flex justify-content-center align-items-center"
+                                    style="height: 82px;">
+                                    <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt=""
+                                        class="recent-card-img-top img-fluid mt-5"
+                                        style="max-width: 100%; height: auto;">
+                                </div>
+                                <hr class="mt-5" style="width: 50%; margin: auto;">
+                                <div class="card-body">
+                                    <p class="recent-card-text pt-5">A collaboration hub that connects <br> teams
+                                        through channels, making <br> communication and project <br> management
+                                        seamless.</p>
+                                </div>
+                            </div>
+
+                            <!-- Back of the third card -->
+                            <div class="recent-flip-card-back recent-project-card-back">
+                                <div class="card-body">
+                                    <div class="recent-image-container mt-5">
+                                        <img src="image/slack 1.png" alt="Software Icon" class="img-fluid"
+                                           >
+                                    </div>
+                                    <h4 class="recent-text">Slack</h4>
+                                    <div class="backbuttons">
+                                        <a href="#" class="btn-light-gray mt-3 text-center"
+                                            style="border-radius: 50px; display: block; line-height: 38px;">Communication Software</a>
+                                        <a href="#" class=" btn-blue mt-5 text-center"
+                                            style="border-radius: 50px; display: block;" class=" btn-blue mt-5"
+                                            style="border-radius: 50px; line-height: 32px;">View Project Details</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- engagment model section -->
-
     <section class="engagment-model">
         <div class="container">
+            <div class="service-heading">
+                <div>
+                    <h2>Our Engagement Models</h2>
+                </div>
+                <div>
+                    <p>We offer tailored engagement models to meet your business needs or learning goals. Whether you
+                        need development services or want to build new skills, we have the right solution. </p>
+                </div>
+            </div>
             <div class="row">
+                <!-- Right column: Engagement model cards -->
+                <div class="col-md-6">
+                    <div class="row">
 
+                        <div class="row engagment-card">
+                            <div class="col-md-2 engagment-card-img"><img src="image/model1.png" alt=""></div>
+                            <div class="col-md-10">
+                                <h6>Project-Based Development</h6>
+                                <p>Our project-based model delivers complete solutions, from concept to deployment,
+                                    building
+                                    apps, websites, and designs tailored to your needs.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row engagment-card second-row" style="margin-left: 35px;">
+                            <div class="col-md-2 engagment-card-img"><img src="image/model2.png" alt=""></div>
+                            <div class="col-md-10">
+                                <h6>Resource Augmentation</h6>
+                                <p>Need extra hands on deck? We provide skilled developers and designers to enhance
+                                    your
+                                    team, ensuring your projects progress smoothly and meet deadlines.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row engagment-card">
+                            <div class="col-md-2 engagment-card-img"><img src="image/model3.png" alt=""></div>
+                            <div class="col-md-10">
+                                <h6>Dedicated Development Team</h6>
+                                <p>We provide dedicated teams specialized in app development, websites, UI/UX,
+                                    and graphic
+                                    design, delivering quality solutions with ongoing support.</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- Left column: Title, text, and image -->
                 <div class="col-md-6">
                     <div class="engagment-left">
-                        <h3>Our Engagement Models</h3>
-                        <p>We offer tailored engagement models to meet your business needs or learning goals. Whether
-                            you need development services or want to build new skills, we have the right solution.</p>
-                        <img src="image/OBJECTS.png" alt="Engagement Models Illustration">
+                        <img src="image/engagment-section-img.png" alt="">
                     </div>
                 </div>
 
 
-                <div class="col-md-6">
-                    <div class="row engagment-card">
-                        <div class="col-md-2 engagment-card-img"><img src="image/model1.png" alt=""></div>
-                        <div class="col-md-10">
-                            <h6>Project-Based Development</h6>
-                            <p>Our project-based model delivers complete solutions, from concept to deployment, building
-                                apps, websites, and designs tailored to your needs.</p>
-                        </div>
-                    </div>
-                    <div class="row engagment-card">
-                        <div class="col-md-2 engagment-card-img"><img src="image/model2.png" alt=""></div>
-                        <div class="col-md-10">
-                            <h6>Resource Augmentation</h6>
-                            <p>Need extra hands on deck? We provide skilled developers and designers to enhance your
-                                team, ensuring your projects progress smoothly and meet deadlines.</p>
-                        </div>
-                    </div>
-                    <div class="row engagment-card">
-                        <div class="col-md-2 engagment-card-img"><img src="image/model3.png" alt=""></div>
-                        <div class="col-md-10">
-                            <h6>Dedicated Development Team</h6>
-                            <p>We provide dedicated teams specialized in app development, websites, UI/UX, and graphic
-                                design, delivering quality solutions with ongoing support.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        </div>
     </section>
 
 
-    <section class="contact py-5 " style="background-color: #F6F7FC;">
-        <div class="container">
-            <div class="row d-flex align-items-start">
-                <!-- First Column: Text Section -->
-                <div class="col-md-6">
-                   
-                        <h3 class="">Contact Us</h3>
-                        <p class="pt-2">Email, call, or complete the form to learn <br>
-                            how HiSkyTech can elevate.</p>
-                        <p class="pt-2">contact@hiskytech.com</p>
-                        <p class="pt-2" >+92 318 6362759</p>
-                   
-                    <h5 class="custom-heading">Customer Support</h5>
-
-                   <div class="row g-0 mt-2"> <!-- g-0 removes the gutter (space) between columns -->
-                    <div class="col-md-6">
-                        <h6>Customer Support</h6>
-                        <p>Our support team is available <br>
-                            24/7 to address any concerns <br>
-                            or queries you may have about <br>
-                            our services or courses.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <h6>Training and Course Inquiries</h6>
-                        <p>Interested in our training programs? <br>
-                            Contact us at courses@hiskytech.com <br>
-                            for more details.
-                        </p>
-                    </div>
-                </div>
-                
-                </div>
-    
-                <!-- Second Column: Form Section -->
-                <div class="col-md-6 ">
-                
-                    <form class="contact-form mx-5" style="width: 454px; height: auto;">
-                        <h4>Get in Touch</h4>
-                        <p>You can reach us anytime.</p>
-                        <div class="row">
-                            <div class="col-md-6 mb-2">
-                                <input type="text" class="form-control custom-input" placeholder="First Name" required>
-                            </div>
-                            <div class="col-md-6 mb">
-                                <input type="text" class="form-control custom-input" placeholder="Last Name" required>
-                            </div>
-                            
-                      
-                            <div class="mb-2">
-                                <input type="email" class="form-control custom-input" placeholder="&#xf0e0; Your Email" required>
-                            </div>
-                            <div class="mb-2">
-                                <input type="tel" class="form-control custom-input" placeholder="&#xf095; Phone Number" required>
-                            </div>
-                            
-                            
-                        <div class="mb-3">
-    <textarea class="form-control custom-textarea" placeholder="How Can I Help You?" required></textarea>
-</div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-
-
-
-
-
-    <section class="maps" style="padding: 50px 0; background-color: #FFFFFF;">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-center" style="width: 975px; height: 531px;">
-                <!-- First Column: Map -->
-                <div class="col-md-7 d-flex justify-content-center align-items-center" style="width: 594px; height: 531px;">
-                    <div id="map" style="width: 100%; height: 100%;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.5212164599097!2d72.67881207472192!3d32.08219611917154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392177f791a3fd63%3A0x3152a6706b93e979!2sHiSkyTech!5e0!3m2!1sen!2s!4v1728948972431!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-    
-                <!-- Second Column: Text Section -->
-                <div class="col-md-4 mx-4 " style="width: 317px; height: 320px;">
-                    <p style="font-family: 'Mulish', sans-serif; font-size: 24px; font-weight: 500; color: black">
-                        Our Location
-                    </p>
-                    <h4 style="font-family: 'Roboto', sans-serif; color: black;">Connecting with You <br>
-                         Near and Far.</h4>
-                    <p style="font-family: 'Mulish', sans-serif; font-size: 24px; font-weight: 500; color: black;">
-                       Head Office
-                    </p>
-                    <p style="font-family: 'Mulish', sans-serif; ; font-weight: 500; color: #666666;">
-                        LG-06 HiSkyTech City Centre <br>
-                         Plazanear City Hospital Zafrullah <br>
-                         Chowk Sargodha.
-                    </p>
-                    <div>
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-
-    <section class="questions-section ">
-    <div class="container">
-        <div class="row">
-            <!-- First Column: Form Section -->
-            <div class="col-md-4">
-                <p class="questions-text">FAQ</p>
-                <h4 class="questions-heading">Do you have any <br>
-                     questions for us?</h4>
-                <p class="questions-description">If there is a question you want to ask, we will <br>
-                     answer all your queries promptly. </p>
-
-                <form class="subscribe-form">
-                    <div class="input-group">
-                       
-                        <input type="email" class="form-control custom-input" placeholder="&#xf0e0; Your Email" required style="width: 200px;">
-                        <button type="submit" class="btn btn-primary mx-2">Submit</button>
-
-                    </div>
-                </form>
-            </div>
-
-            <!-- Second Column: Questions Table -->
-            <div class="col-md-7">
-                <div class="faq">
-                    <div class="faq-item">
-                        <p>What makes HiSkyTech different from other tech firms?</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-item">
-                        <p>What services does HiSkyTech offer?</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-item">
-                        <p>How can I enroll in your training programs?</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-item">
-                        <p>What kind of support does HiSkyTech provide?</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-
-<!-- feedback-secction -->
-
-<section class="field-back-section">
-    <div class="container-fluid ">
-        <h4 class="section-heading ">Client Testimonials</h4>
-        <p class="section-description">At HiSkyTech, we pride ourselves on delivering exceptional technology solutions tailored to our <br>
-             clients' unique needs. But don't just take our  word for it – hear from some of our satisfied clients!</p>
-
-        <div class="row ">
-            <div class="col-md-12 ">
-                <div class="center ">
-                    <!-- Card 1 -->
-                    <div class="card ">
-                        <div class="card-content">
-                            <img src="image/avtar.png" alt="" class="card-image">
-                            <div class="card-details">
-                                <p class="card-name">John D</p>
-                                <div class="card-rating" style="color: #FFB200; margin-left: 131px;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #E4E4E4;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <p class="card-description">"Exceptional Service! HiSkyTech helped us <br>
-                             scale our business with cutting-edge <br>
-                              solutions. Their team is highly skilled and <br>
-                               reliable!"</p>
-                    </div>
-    
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="image/avtar.png" alt="" class="card-image">
-                            <div class="card-details">
-                                <p class="card-name">John D</p>
-                                <div class="card-rating" style="color: #FFB200; margin-left: 131px;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #E4E4E4;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <p class="card-description">"Exceptional Service! HiSkyTech helped us <br>
-                             scale our business with cutting-edge <br>
-                              solutions. Their team is highly skilled and <br>
-                               reliable!"</p>
-                    </div>
-    
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="image/avtar.png" alt="" class="card-image">
-                            <div class="card-details">
-                                <p class="card-name">John D</p>
-                                <div class="card-rating" style="color: #FFB200; margin-left: 131px;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #E4E4E4;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <p class="card-description">"Exceptional Service! HiSkyTech helped us <br>
-                             scale our business with cutting-edge <br>
-                              solutions. Their team is highly skilled and <br>
-                               reliable!"</p>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="image/avtar.png" alt="" class="card-image">
-                            <div class="card-details">
-                                <p class="card-name">John D</p>
-                                <div class="card-rating" style="color: #FFB200; margin-left: 131px;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #E4E4E4;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <p class="card-description">"Exceptional Service! HiSkyTech helped us <br>
-                             scale our business with cutting-edge <br>
-                              solutions. Their team is highly skilled and <br>
-                               reliable!"</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="image/avtar.png" alt="" class="card-image">
-                            <div class="card-details">
-                                <p class="card-name">John D</p>
-                                <div class="card-rating" style="color: #FFB200; margin-left: 131px;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #E4E4E4;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <p class="card-description">"Exceptional Service! HiSkyTech helped us <br>
-                             scale our business with cutting-edge <br>
-                              solutions. Their team is highly skilled and <br>
-                               reliable!"</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="image/avtar.png" alt="" class="card-image">
-                            <div class="card-details">
-                                <p class="card-name">John D</p>
-                                <div class="card-rating" style="color: #FFB200; margin-left: 131px;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star" style="color: #E4E4E4;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <p class="card-description">"Exceptional Service! HiSkyTech helped us <br>
-                             scale our business with cutting-edge <br>
-                              solutions. Their team is highly skilled and <br>
-                               reliable!"</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-</section>
-
-
-
-           <!-- footer-section -->
-
-           <section class="footer">
-            <div class="container d-flex justify-content-center align-items-center ">
-                <div class="row">
-                    <!-- First col-md-4 -->
-                    <div class="col-md-6 ">
-                        <div class="card custom-card  " style="width: 381px; height: 467px;">
-                            <!-- Card Image -->
-                            <img src="image/HiSkyTech Png_LOGO-Horizantal-02 4.png" alt="" class="card-img">
-        
-                            <!-- Font Awesome and Paragraph -->
-                            <div class="card-content">
-                                <i class="fas fa-star custom-icon"></i>
-                                <p class="custom-text">5 Star Reviews</p>
-                            </div>
-        
-                            <!-- Row of Circular Images (50x50) -->
-                            <div class="image-row d-flex justify-content-center mt-3">
-                                <img src="image/Ellipse 1.png" alt="" class="rounded-circle img-small">
-                                <img src="image/Ellipse 2.png" alt="" class="rounded-circle img-small">
-                                <img src="image/Ellipse 3.png" alt="" class="rounded-circle img-small">
-                                <img src="image/Ellipse 4.png" alt="" class="rounded-circle img-small">
-                                <img src="image/Ellipse 5.png" alt="" class="rounded-circle img-small">
-                            </div>
-        
-                            <!-- Paragraph Below -->
-                            <p class="custom-paragraph">Our Socials</p>
-        
-                            <!-- Three Font Awesome Icons (50x50) -->
-                            <div class="icon-row d-flex justify-content-center mt-3">
-                                <a href="https://www.linkedin.com" target="_blank">
-                                    <i class="fab fa-linkedin custom-icon-large"></i>
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank">
-                                    <i class="fab fa-facebook custom-icon-large"></i>
-                                </a>
-                                <a href="https://www.twitter.com" target="_blank">
-                                    <i class="fab fa-twitter custom-icon-large"></i>
-                                </a>
-                            
-                    
-                             
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-        
-                    <!-- Second col-md-4 -->
-                    <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="row">
-                            <!-- First col-md-5 -->
-                            <div class="col-md-4  services-column">
-                                <h5>Services</h5>
-                                <a href="#">Web Development</a><br>
-                                <a href="#">Mobile App Development</a><br>
-                                <a href="#">UI UX Design</a><br>
-                                <a href="#">Graphic Design</a><br>
-                                <a href="#">Product Development</a><br>
-                                <a href="#">AI Development</a><br>
-                            </div>
-                    
-                            <!-- Second col-md-4 -->
-                            <div class="col-md-4  services-column">
-                                <h5>Hire</h5>
-                                <a href="#">Elixir Developer</a><br>
-                                <a href="#">Python Developer</a><br>
-                                <a href="#">React JS Developer</a><br>
-                                <a href="#">SaaS JS Developer</a><br>
-                                <a href="#">Node JS Developer</a><br>
-                            </div>
-                    
-                            <!-- Third col-md-4 -->
-                            <div class="col-md-4 services-column">
-                                <h5>Company</h5>
-                                <a href="#">About Us</a><br>
-                                <a href="#">Portfolio</a><br>
-                                <a href="#">Blog</a><br>
-                                <a href="#">Careers</a><br>
-                                <a href="#">Pricing</a><br>
-                                <a href="#">Contact Us</a><br>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        
-
-
-
-
-
-
-
-
+    <!-- our team section -->
     <section class="team">
         <div class="container">
             <div class="service-heading">
@@ -883,95 +485,109 @@
                     <h2>Meet Our Experts</h2>
                 </div>
                 <div>
-                    <p class="team-text">A diverse group of passionate tech enthusiasts dedicated to delivering the best
+                    <p class="team-text">A diverse group of passionate tech enthusiasts dedicated to
+                        delivering the best
                         solutions.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 team-card">
                     <div class="front-img">
-                        <img src="image/Team card.png" alt="Front Image">
+                        <img src="image/ali.jpeg" alt="Front Image">
                     </div>
                     <div class="back-img">
                         <div class="card-image">
-                            <img src="image/team-card-img.png" alt="Ali Hamza">
+                            <img src="image/ali.jpeg" alt="Ali Hamza">
                         </div>
                         <div class="card-content">
                             <h3>Ali Hamza</h3>
                             <p>Android Developer</p>
                         </div>
                         <div class="card-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/ali-hamza-7b3762252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in custom-icon-large"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100092395756725&mibextid=ZbWKwL"><i class="fab fa-facebook-f custom-icon-large"></i>
+                            </a>
+                            <a href="https://www.instagram.com/alihamx_a/profilecard/?igsh=ejZwYmRmNTNpc2dy"><i class="fab fa-instagram custom-icon-large"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 team-card">
                     <div class="front-img">
-                        <img src="image/Team card.png" alt="Front Image">
+                        <img src="image/ehtasham.webp" alt="Front Image">
                     </div>
                     <div class="back-img">
                         <div class="card-image">
-                            <img src="image/team-card-img.png" alt="Ali Hamza">
+                            <img src="image/ehtasham.webp" alt="Ali Hamza">
                         </div>
                         <div class="card-content">
-                            <h3>Ali Hamza</h3>
-                            <p>Android Developer</p>
+                            <h3>Atsham Zafar</h3>
+                            <p>UI/UX Designer</p>
                         </div>
                         <div class="card-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/atsham-zafar-3739bb256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in custom-icon-large"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/Si4gPb87vbA9NLaC/"><i class="fab fa-facebook-f custom-icon-large"></i>
+                            </a>
+                            <a href="https://www.instagram.com/atsham.uxui/profilecard/?igsh=MXZvd2d1dWJkdjVubw"><i class="fab fa-instagram custom-icon-large"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 team-card">
                     <div class="front-img">
-                        <img src="image/Team card.png" alt="Front Image">
+                        <img src="image/raheel.jpg" alt="Front Image">
                     </div>
                     <div class="back-img">
                         <div class="card-image">
-                            <img src="image/team-card-img.png" alt="Ali Hamza">
+                            <img src="image/raheel.jpg" alt="Ali Hamza">
                         </div>
                         <div class="card-content">
-                            <h3>Ali Hamza</h3>
-                            <p>Android Developer</p>
+                            <h3>Raheel Ahmad</h3>
+                            <p>Web Developer</p>
                         </div>
                         <div class="card-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/raheel-ahmed-384970285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in custom-icon-large"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/19WMmhk4vP/"><i class="fab fa-facebook-f custom-icon-large"></i>
+                            </a>
+                            <a href="https://www.instagram.com/raheel3532/profilecard/?igsh=MWU1Mm0xOGl5ajdibw=="><i class="fab fa-instagram custom-icon-large"></i>
+                            </a>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 team-card">
                     <div class="front-img">
-                        <img src="image/Team card.png" alt="Front Image">
+                        <img src="image/ahmad.jpeg" alt="Front Image">
                     </div>
                     <div class="back-img">
                         <div class="card-image">
-                            <img src="image/team-card-img.png" alt="Ali Hamza">
+                            <img src="image/ahmad.jpeg" alt="Ali Hamza">
                         </div>
                         <div class="card-content">
-                            <h3>Ali Hamza</h3>
+                            <h3>Ahmad Ullah</h3>
                             <p>Android Developer</p>
                         </div>
                         <div class="card-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/muhammad-ahmad-2b0b20245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in custom-icon-large"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61567219184502&mibextid=JRoKGi"><i class="fab fa-facebook-f custom-icon-large"></i>
+                            </a>
+                            <a href="https://www.instagram.com/codee_builder?igsh=cGkxeW5jM21idnFs"><i class="fab fa-instagram custom-icon-large"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
+
+
+
+
         </div>
     </section>
-    <!-- ideas section -->
+
     <section class="ideas">
         <div class="container">
             <div class="row">
@@ -980,16 +596,424 @@
                         <span class="color-hi-tech">Hi</span><span class="color-sky">Sky</span><span
                             class="color-hi-tech">Tech</span>.
                     </h4>
-                    
+
                 </div>
-                <div class="col-md-7 idea-p"><p>At HiSkyTech, we specialize in UI/UX design, mobile app development, and graphic design services. Our mission is to create seamless digital experiences tailored to your needs. Watch this video to learn how we transform ideas into reality with our expert solutions.  </p></div>
+                <div class="col-md-7 idea-p">
+                    <p>At HiSkyTech, we specialize in UI/UX design, mobile app development, and graphic
+                        design services. Our mission is to create seamless digital experiences tailored to
+                        your needs. Watch this video to learn how we transform ideas into reality with our
+                        expert solutions. </p>
+                </div>
 
             </div>
             <div class="row idea-img">
-                <img src="image/Frame 72.png" alt="">
+                <video src="videos/Hi-Sky.mp4" controls style="width: 100%; max-width: 100%; height: auto;">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+            
+        </div>
+        </div>
+    </section>
+
+
+    <section class="contact py-5" style="background-color: #F6F7FC;">
+        <div class="container">
+            <div class="row d-flex align-items-start">
+                <!-- First Column: Text Section -->
+                <div class="col-md-6 contact-info">
+                    <h3 class="contact-title">Contact Us</h3>
+                    <p class="contact-description pt-2" style="display: inline; ">
+                        Email, call, or complete the form to learn <br> how
+                    <h5 style="display: inline;"><span class="color-hi-tech">Hi</span><span
+                            class="color-sky">Sky</span><span class="color-hi-tech">Tech</span></h5> can elevate.
+                    </p>
+                    <p class="contact-email pt-2">contact@hiskytech.com</p>
+                    <p class="contact-phone pt-2">+92 318 6362759</p>
+
+                    <h5 class="support-heading custom-heading">Customer Support</h5>
+                    <div class="row g-0 mt-2">
+                        <div class="col-md-6">
+                            <h6 class="support-title">Customer Support</h6>
+                            <p class="support-description">
+                                Our support team is available 24/7 to address any concerns or queries you may have about
+                                our services or courses.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="inquiries-title">Training and Course Inquiries</h6>
+                            <p class="inquiries-description">
+                                Interested in our training programs? Contact us at courses@hiskytech.com for more
+                                details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Column: Form Section -->
+                <div class="col-md-6 contact-form-container">
+                    <form class="contact-form mx-5" style="width: 430px; height: auto;">
+                        <h4 class="form-title">Get in Touch</h4>
+                        <p class="form-description">You can reach us anytime.</p>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <input type="text" class="form-control custom-input1" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <input type="text" class="form-control custom-input1" placeholder="Last Name" required>
+                            </div>
+                            <div class="mb-2">
+                                <input type="email" class="form-control custom-input" placeholder="&#xf0e0; Your Email"
+                                    required>
+                            </div>
+                            <div class="mb-2">
+                                <input type="tel" class="form-control custom-input" placeholder="&#xf095; Phone Number"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control custom-textarea" placeholder="How Can I Help You?"
+                                    required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- map -->
+
+
+    <section class="location-section" style="padding: 50px 0; background-color: #FFFFFF;">
+        <div class="container">
+            <div class="row" style="width: 975px; height: 531px;">
+                <!-- First Column: Map -->
+                <div class="col-md-7 d-flex justify-content-center align-items-center"
+                    style="width: 594px; height: 500px;">
+                    <div id="map" style="width: 100%; height: 100%;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.5212164599097!2d72.67881207472192!3d32.08219611917154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392177f791a3fd63%3A0x3152a6706b93e979!2sHiSkyTech!5e0!3m2!1sen!2s!4v1728948972431!5m2!1sen!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Second Column: Text Section -->
+                <div class="col-md-4" style="padding-top: 130px;">
+                    <p class="location-title">
+                        Our Location
+                    </p>
+                    <h4 class="location-subheading">
+                        Connecting with You <br> Near and Far.
+                    </h4>
+                    <p class="location-head-office" style=" font-size: 24px; font-weight: 500; color: black;">
+                        Head Office
+                    </p>
+                    <p class="location-address" style=" font-weight: 500; color: #666666;">
+                        LG-06 HiSkyTech City Centre <br>
+                        Plaza near City Hospital Zafrullah <br>
+                        Chowk Sargodha.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                <!-- First Column: Form Section -->
+                <div class="col-md-4">
+                    <p class="faq-text">FAQ</p>
+                    <h4 class="faq-heading">Do you have any <br>
+                        questions for us?</h4>
+                    <p class="faq-description">If there is a question you want to ask, we will <br>
+                        answer all your queries promptly.</p>
+
+                        <form class="faq-subscribe-form">
+                            <div class="faq-input-group">
+                                <div class="input-container">
+                                    <img src="image/sms.png" alt="Email Icon" class="input-icon3"> <!-- Email Icon -->
+                                    <input type="email" class="form-control input-field" placeholder="Your Email" required>
+                                </div>
+                                <button type="submit" class="btn-faq mx-2 mt-4">Submit</button>
+                            </div>
+                        </form>
+                </div>
+
+                <!-- Second Column: Questions Table -->
+                <div class="col-md-7">
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <div class="accordion__header" data-toggle="#faq1">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit?</div>
+                            <div class="accordion__content" id="faq1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__header" data-toggle="#faq2">But I must explain to you how all this
+                                mistaken idea?</div>
+                            <div class="accordion__content" id="faq2">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                    architecto beata</p>
+
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__header" data-toggle="#faq3">At vero eos et accusamus et iusto odio?
+                            </div>
+                            <div class="accordion__content" id="faq3">
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a complete account of the system, and
+                                    expound the actual teachings of the great explorer of the truth, the master-builder
+                                    of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it
+                                    is pleasure, but because those who do not know how to pursue pleasure rationally
+                                    encounter consequences that are extremely painful</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- feedback-secction -->
+
+    <section class="field-back-section">
+        <div class="container-fluid">
+            <div class="service-heading">
+                <div>
+                    <h2>Client Testimonials</h2>
+                </div>
+                <div>
+                    <p class="team-text">At HiSkyTech, we pride ourselves on delivering exceptional technology
+                        solutions tailored to our
+                        clients' unique needs. But don't just take our word for it – hear from some of our satisfied clients!</p>
+                </div>
+            </div>
+         
+
+            <div class="testimonial-slider center">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-card-content d-flex">
+                        <img src="image/avtar.png" alt="" class="testimonial-card-image">
+                        <div class="testimonial-card-details">
+                            <p class="testimonial-card-name">John D</p>
+                        </div>
+                        <div class="testimonial-card-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star inactive-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card-description text-center">"Exceptional Service! HiSkyTech helped us scale
+                        our business with cutting-edge solutions. Their team is highly skilled and reliable!"</p>
+                </div>
+                <!-- Repeat for additional testimonial cards -->
+                <div class="testimonial-card">
+                    <div class="testimonial-card-content d-flex">
+                        <img src="image/avtar.png" alt="" class="testimonial-card-image">
+                        <div class="testimonial-card-details">
+                            <p class="testimonial-card-name">John D</p>
+                        </div>
+                        <div class="testimonial-card-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star inactive-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card-description text-center">"Exceptional Service! HiSkyTech helped us scale
+                        our business with cutting-edge solutions. Their team is highly skilled and reliable!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-content d-flex">
+                        <img src="image/avtar.png" alt="" class="testimonial-card-image">
+                        <div class="testimonial-card-details">
+                            <p class="testimonial-card-name">John D</p>
+                        </div>
+                        <div class="testimonial-card-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star inactive-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card-description text-center">"Exceptional Service! HiSkyTech helped us scale
+                        our business with cutting-edge solutions. Their team is highly skilled and reliable!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-content d-flex">
+                        <img src="image/avtar.png" alt="" class="testimonial-card-image">
+                        <div class="testimonial-card-details">
+                            <p class="testimonial-card-name">John D</p>
+                        </div>
+                        <div class="testimonial-card-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star inactive-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card-description text-center">"Exceptional Service! HiSkyTech helped us scale
+                        our business with cutting-edge solutions. Their team is highly skilled and reliable!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-content d-flex">
+                        <img src="image/avtar.png" alt="" class="testimonial-card-image">
+                        <div class="testimonial-card-details">
+                            <p class="testimonial-card-name">John D</p>
+                        </div>
+                        <div class="testimonial-card-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star inactive-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card-description text-center">"Exceptional Service! HiSkyTech helped us scale
+                        our business with cutting-edge solutions. Their team is highly skilled and reliable!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-content d-flex">
+                        <img src="image/avtar.png" alt="" class="testimonial-card-image">
+                        <div class="testimonial-card-details">
+                            <p class="testimonial-card-name">John D</p>
+                        </div>
+                        <div class="testimonial-card-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star inactive-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-card-description text-center">"Exceptional Service! HiSkyTech helped us scale
+                        our business with cutting-edge solutions. Their team is highly skilled and reliable!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container d-flex justify-content-center align-items-center" style="padding: 50px 0;">
+            <div class="row w-100"> <!-- Added w-100 for full row width -->
+                <!-- First col-md-6 -->
+                <div class="col-md-5 d-flex justify-content-center align-items-start">
+                    <div class="card custom-card">
+                        <!-- Card Image -->
+                        <img src="image/footer logo.png" alt="" class="card-img">
+                        <hr class="mt-4" style="width: 90%; margin: auto;border: 1px solid #E4E4E4">
+                        <!-- Font Awesome and Paragraph -->
+                        <div class="card-content">
+                            <i class="fas fa-star custom-icon"></i>
+                            <p class="custom-text" style="color: black;">5 Star Reviews</p>
+                        </div>
+
+                        <!-- Row of Circular Images (50x50) -->
+                        <div class="image-row d-flex justify-content-center mt-3">
+                            <img src="image/Ellipse 1.png" alt="" class="rounded-circle img-small">
+                            <img src="image/Ellipse 2.png" alt="" class="rounded-circle img-small">
+                            <img src="image/Ellipse 3.png" alt="" class="rounded-circle img-small">
+                            <img src="image/Ellipse 4.png" alt="" class="rounded-circle img-small">
+                            <img src="image/Ellipse 5.png" alt="" class="rounded-circle img-small">
+                        </div>
+                        <hr class="mt-4" style="width: 90%; margin: auto;border: 1px solid #E4E4E4">
+
+                        <p class="custom-paragraph">Our Socials</p>
+                        <div class="icon-row d-flex justify-content-center mt-3">
+                            <a href="https://www.linkedin.com/company/hiskytech/" target="_blank">
+                                <i class="fab fa-linkedin-in custom-icon-large"></i>
+</i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61554879965194&mibextid=ZbWKwL" target="_blank">
+                                <i class="fab fa-facebook-f custom-icon-large"></i>
+</i>
+                            </a>
+                            <a href="https://www.instagram.com/hisky_tech?igsh=MTl2MGtxdXV5ejd5bg==" target="_blank">
+                                <i class="fab fa-instagram custom-icon-large"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second col-md-6 -->
+                <div class="col-md-7 align-items-start">
+                    <div class="row">
+                        <!-- First col-md-4 -->
+                        <div class="col-md-4 services-column">
+                            <h5>Services</h5>
+                            <a href="#">Web Development</a><br>
+                            <a href="#">Mobile App Development</a><br>
+                            <a href="#">UI UX Design</a><br>
+                            <a href="#">Graphic Design</a><br>
+                            <a href="#">Product Development</a><br>
+                            <a href="#">AI Development</a><br>
+                        </div>
+
+                        <!-- Second col-md-4 -->
+                        <div class="col-md-4 services-column">
+                            <h5>Hire</h5>
+                            <a href="#">Elixir Developer</a><br>
+                            <a href="#">Python Developer</a><br>
+                            <a href="#">React JS Developer</a><br>
+                            <a href="#">SaaS JS Developer</a><br>
+                            <a href="#">Node JS Developer</a><br>
+                        </div>
+
+                        <!-- Third col-md-4 -->
+                        <div class="col-md-4 services-column">
+                            <h5>Company</h5>
+                            <a href="#">About Us</a><br>
+                            <a href="#">Portfolio</a><br>
+                            <a href="#">Blog</a><br>
+                            <a href="#">Careers</a><br>
+                            <a href="#">Pricing</a><br>
+                            <a href="#">Contact Us</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-section-left">
+
+                <p class="footer-copyright"> <img src="image/copyright.png" alt="img"> All Rights Reserved By HiSkyTech
+                </p>
+            </div>
+            <div class="footer-section-right">
+                <a href="#" class="footer-policy">Privacy Policy</a>
+                <span>|</span>
+                <a href="#" class="footer-terms">Terms & Conditions</a>
+            </div>
+        </footer>
+    </section>
+
 
 
 
@@ -999,33 +1023,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/script.js"></script>
     <script>
-   $('.center').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  autoplay: true,
-  arrows: false, // Disable arrows
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3,
-        arrows: false // Ensure arrows are disabled for this breakpoint as well
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1,
-        arrows: false // Ensure arrows are disabled for this breakpoint as well
-      }
-    }
-  ]
-});
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            autoplay: true,
+            arrows: false, // Disable arrows
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3,
+                        arrows: false // Ensure arrows are disabled for this breakpoint as well
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1,
+                        arrows: false // Ensure arrows are disabled for this breakpoint as well
+                    }
+                }
+            ]
+        });
 
     </script>
 </body>
