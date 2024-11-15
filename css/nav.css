@@ -1,0 +1,56 @@
+
+.navbar {
+    padding: 0.5rem 1rem;
+    /* Adjust padding as needed */
+}
+
+.navbar-brand img {
+    height: 40px;
+    /* Adjust logo height */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+.navbar-nav {
+    margin-left: 20px;
+    /* Adjust space between logo and nav items */
+}
+
+.nav-link {
+    margin-left: 20px;
+    /* Space between nav items */
+}
+
+.box1 p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.box1 h2 {
+    padding-top: 100px;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+color: #1B1B1E;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+}
+
+
+.section-A {
+    background-color: #fff;
+    height: 72px;
+    z-index: 99;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}

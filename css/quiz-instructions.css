@@ -1,0 +1,99 @@
+.quiz-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+margin-top: auto;
+margin-bottom: auto;
+}
+.quiz-card {
+    background-color: #F6F7FC;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+
+}
+.quiz-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.quiz-details {
+    color: #666666;
+    margin-bottom: 15px;
+}
+.btn-primary {
+    width: 100px;
+    background-color: #0A3A8F !important;
+}
+.attempts-left {
+    color: #0A3A8F;
+    margin-top: 15px;
+}
+/* modals css */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 838px !important;
+height: 550px;
+overflow-y: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-header h2 {
+    margin-left: auto;
+    margin-right: auto;
+font-size: 32px;
+font-weight: 700;
+line-height: 41.6px;
+text-align: left;
+
+}
+.modal-body-heading{
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    
+}
+.modal-body p {
+    text-align: left;
+    padding: 8px 0px;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.start-btn {
+    background-color: #0A3A8F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

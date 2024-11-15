@@ -1381,10 +1381,10 @@ text-align: center;
 /* Column Link and Heading Styling */
 .row div h5 {
     font-size: 24px;
-    color: #000;
+
     font-weight: 700;
     margin-bottom: 10px;
-    color: #FFFFFF;
+
     line-height: 33.6px;
   
 }
@@ -1430,13 +1430,16 @@ text-align: center;
 
 /* General Column Styling */
 .services-column {
+  
     padding: 15px;
   line-height: 39px;
     margin: 10px 0;
     height: 100%;
     
 }
-
+.services-column h5{
+    color: white;
+}
 /* Footer Section */
 .site-footer {
     width: 1152px; /* Fixed width */

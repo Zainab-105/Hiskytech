@@ -1,0 +1,215 @@
+body{
+    overflow: hidden;
+}
+/* left section */
+.left-side{
+    padding: 0px 40px ;
+    background-color: #F6F7FC;
+    width: 100%;         
+    height: 100vh;      
+    overflow-y: auto;         
+    
+}
+.left-side::-webkit-scrollbar {
+    display: none;
+}
+.left-fixed{
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    
+    background-color: #F6F7FC;
+}
+.content p{
+    color: #1B1B1E;
+}
+.sideicon{
+  height: 72px;  
+  padding: 12px;
+  border-bottom: 2px solid #E4E4E4;
+}
+
+/* code of progressbar */
+.prgresssection{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #E4E4E4;
+}
+.prgressbar {
+    width: 291px;
+    background-color:#E4E4E4;
+    height: 8px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+  }
+  .text {
+    color: white;
+  }
+  .progress {
+    height:8px !important;
+    background-color: #0A3A8F !important;
+    width: 0%;
+    border-radius: 10px;
+    transition: all 1s;
+  }
+  .prgresstxt{
+    color: #0A3A8F;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: center;
+padding: 12px 0px;
+  }
+
+  .subassigmnt {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    width: 291px;
+    align-items: center;
+    gap: 0.5rem;
+justify-content: center;
+padding: 16px 0px 30px 0px;
+border-bottom: 2px solid #E4E4E4;
+border-radius: 8px 0px 0px 0px;
+
+
+}
+
+.file-input {
+    display: none;
+}
+
+.custom-label {
+    cursor: pointer;
+    color: #0A3A8F; 
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.content{
+    margin-top: 24px;
+   margin-bottom: 24px;
+}
+.content-des{
+    width: 291px;
+    display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+}
+.quiz{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 291px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.quiz-label{
+    cursor: pointer;
+    color: #1B1B1E; 
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f9f9f9; 
+}
+/* right side */
+.right-side{
+    padding: 0px 40px;
+    width: 100%;         
+    height: 100vh;      
+    overflow-y: auto;         
+    
+
+}
+.right-side::-webkit-scrollbar {
+    display: none;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F7FC;
+    position: sticky;
+    top: 0px;
+    height: 72px;  
+  padding: 24px;
+    align-items: center;
+}
+.head-right{
+    display: flex;
+}
+.left-btn{
+    width: 126px;
+height: 40px;
+padding: 8px 20px 8px 15px;
+gap: 10px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px;
+color: #0A3A8F;
+border: 0px;
+display: flex;
+align-items: center;
+background-color: white;
+}
+.right-button{
+    width: Hug (97px)px;
+height: Hug (40px)px;
+padding: 8px 15px 8px 20px;
+gap: 10px;
+border-radius: 8px;
+display: flex;
+align-items: center;
+background-color: #0A3A8F;
+color: white;
+border: 0px;
+}
+.lecture{
+    width: 1020px;
+height: 575px;
+margin-top: 24px;
+margin-bottom: 24px;
+border-radius: 24px;
+opacity: 0px;
+
+}
+.lecture img{
+    height: 100%;
+    width: 100%;
+}
+.right-content h2{
+color: #666666;
+font-size: 32px;
+font-weight: 700;
+line-height: 41.6px;
+text-align: left;
+}
+.description h3{
+  padding-top: 24px;
+  padding-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+}
+.description p{
+    color: #666666;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+}
+.right-content h2{
+font-size: 24px;
+font-weight: 700 !important;
+line-height: 33.6px;
+text-align: left;
+}
+
+

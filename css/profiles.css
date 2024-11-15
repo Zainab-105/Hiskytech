@@ -1,0 +1,781 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.custom-section-container {
+width: 100%;
+height: auto; /* Adjusted for responsiveness */
+margin: 0 auto;
+}
+
+/* Top Row - Category and Search Bar */
+.custom-top-row {
+display: flex;
+align-items: center;
+
+}
+
+.custom-category-select {
+width: 128px;
+padding: 8px 15px 8px 20px;
+border-radius: 8px ;
+}
+
+:root {
+--2nd-brand: #F6F7FC;
+--Brand-color: #0A3A8F;
+}
+
+.custom-category-box select {
+
+border: 1px solid var(--Brand-color, #0A3A8F);
+background: var(--2nd-brand, #F6F7FC);
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+padding: 8px;
+border-radius: 8px;
+color: #0A3A8F;
+height: 44px;
+}
+
+.custom-search-box {
+width: 693px;
+margin-left: 32px;
+padding: 10px 16px;
+border-radius: 8px 0 0 0;
+border: 1px solid #000;
+display: flex;
+align-items: center;
+gap: 10px;
+border-color: #E4E4E4;
+}
+
+.custom-search-box input {
+width: 100%;
+border: none;
+outline: none;
+padding-left: 10px;
+font-size: 16px;
+background: #F6F7FC;
+}
+
+.custom-search-box .fas {
+font-size: 20px;
+color: #666;
+}
+
+.custom-cart-icon {
+width: 44px;
+height: 44px;
+margin-left: 32px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.custom-cart-icon .fas {
+font-size: 24px;
+color: #000;
+}
+
+/* Card Section */
+.custom-card-section {
+display: flex;
+flex-wrap: wrap;
+width: 1152px;
+margin: 24px auto;
+}
+
+.custom-card {
+width: 264px;
+
+border-radius: 24px;
+display: flex;
+flex-direction: column;
+background-color: #fff;
+}
+
+.custom-card img {
+width: 264px;
+height: 164px;
+border-radius: 24px 24px 0 0;
+object-fit: cover;
+}
+
+.custom-card-content {
+padding: 16px;
+height: 350px;
+overflow: hidden;
+}
+
+.custom-card-content h3 {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+margin: 4px 0;
+}
+
+.custom-card-content p {
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+text-align: left;
+color: #666;
+margin: 4px 0;
+}
+
+.custom-rating {
+display: flex;
+align-items: center;
+gap: 4px;
+}
+
+.custom-rating i {
+font-size: 18px;
+color: #FFD700;
+}
+
+.custom-card-price {
+font-size: 16px;
+font-weight: 600;
+margin-top: 16px;
+}
+
+
+/* code of progressbar */
+.prgresssection{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.prgressbar {
+    width: 291px;
+    background-color:#E4E4E4;
+    height: 8px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+  }
+  .text {
+    color: white;
+  }
+  .progress {
+    height:8px !important;
+    background-color: #0A3A8F !important;
+    width: 0%;
+    border-radius: 10px;
+    transition: all 1s;
+  }
+  .prgresstxt{
+    color: #0A3A8F !important;
+font-size: 16px ;
+font-weight: 600 !important;
+line-height: 24px;
+text-align: left  !important;
+padding: 12px 0px;
+  }
+  .prgresstxt span{
+    font-weight: 300;
+  }
+  /* validity css */
+  .validity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .valid-left p{
+
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+  }
+  .valid-right img{
+    object-fit: cover;
+    height: 24px;
+    width: 24px;
+  }
+/* Read More Button */
+.custom-read-more-section {
+text-align: center;
+margin: 40px 0;
+}
+
+.custom-read-more-btn {
+display: inline-block;
+padding: 10px 20px;
+color: #0A3A8F; /* Text color */
+border-radius: 8px;
+font-family: 'Roboto', sans-serif; /* Font family */
+font-size: 16px; /* Updated font size */
+font-weight: 500; /* Font weight */
+line-height: 24px; /* Line height */
+text-align: left; /* Text alignment */
+text-decoration: none; /* Remove underline */
+border: 1px solid var(--Brand-color, #0A3A8F); /* Border with brand color */
+}
+
+/* Heading Section */
+.custom-heading-section {
+width: 100%; /* Fixed width */
+
+opacity: 1; /* Full opacity */
+margin-bottom: 20px; /* Space between heading and cards */
+}
+
+.custom-heading-section h4 {
+font-family: 'Roboto', sans-serif; /* Font family */
+font-size: 32px; /* Font size */
+font-weight: 700; /* Font weight */
+line-height: 41.6px; /* Line height */
+text-align: left; /* Text alignment */
+color: black; /* Text color */
+margin: 0; /* Remove default margin */
+padding: 10px; /* Optional padding */
+}
+
+.custom-card-section {
+display: flex;
+flex-wrap: wrap; /* Allows cards to wrap if there's not enough space */
+gap: 20px; /* Gap between cards */
+}
+.rating-text {
+font-family: 'Roboto', sans-serif; /* Font family */
+font-size: 16px; /* Font size */
+font-weight: 400; /* Font weight */
+line-height: 24px; /* Line height */
+text-align: right; /* Text alignment */
+color: #000; /* Text color (change if needed) */
+margin-right: 8px; /* Space between text and stars */
+display: inline-block; /* Keeps the text and stars aligned */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section */
+.main-section {
+margin-top: 92px;
+margin-left: 24px;
+margin-right: 24px;
+margin-bottom: 24px;
+display: flex;
+flex-direction: column;
+gap: 0;
+opacity: 1;
+}
+
+/* Container Styles */
+.first-container {
+display: flex;
+gap: 0;
+}
+
+/* Row */
+.row {
+display: flex;
+gap: 0;
+}
+
+/* First Layout with Image Stack */
+.first-layout {
+width: 72px;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+gap: 0;
+background: var(--2nd-brand, #F6F7FC);
+
+}
+
+.stacked-image {
+width: 32px;
+height: 32px;
+
+opacity: 1;
+}
+.stacked-image1 {
+width: 32px;
+height: 32px;
+margin-top: 44px;
+opacity: 1;
+}
+.stacked-image2 {
+width: 32px;
+height: 32px;
+margin-top: 32px;
+opacity: 1;
+}
+/* Second Layout */
+.second-layout {
+width: 1050px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+height: auto;
+margin-left: 64px;
+}
+
+
+
+h5 {
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: left;
+color: black;
+
+}
+
+.text-image-layout {
+display: flex;
+align-items: center;
+gap: 24px;
+margin-top: 32px;
+}
+
+.small-image {
+width: 100px;
+height: 100px;
+opacity: 1;
+}
+
+.text-container {
+display: flex;
+align-items: center;
+padding: 8px 15px;
+gap: 4px;
+border-radius: 8px;
+border: 1px solid #E4E4E4;
+opacity: 1;
+Width:147px;
+Height:44px;
+}
+.upload-label {
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.small-icon{
+width: 24px;
+height: 24px;
+
+}
+.upload-text {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #0A3A8F;
+}
+
+.cta-button {
+padding: 8px 20px;
+border-radius: 8px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #FF3B30;
+background: #E4E4E4;
+
+border: none;
+}
+
+/* Form Layout */
+.form-layout {
+width: 390px;
+display: flex;
+flex-direction: column;
+margin-top: 32px;
+}
+
+.input-row {
+display: flex;
+gap: 8px;
+margin-top: 32px;
+}
+.input-container {
+position: relative;
+width: 100%;
+max-width: 283px;
+margin-bottom: 16px; /* Space between fields */
+}
+.input-field {
+width: 390px; /* Or use 100% if it should take the full container width */
+height: 40px;
+padding: 8px 8px 8px 40px; /* Left padding increased for icon space */
+font-size: 16px;
+font-family: Roboto, sans-serif;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+border: 1px solid var(--levels-gray, #E4E4E4);
+border-radius: 8px;
+background: var(--Border-alternate, #FFFFFF);
+color: #333;
+outline: none;
+box-sizing: border-box;
+}
+.input-field1 {
+width: 187px; /* Or use 100% if it should take the full container width */
+height: 40px;
+padding: 8px 8px 8px 40px; /* Left padding increased for icon space */
+font-size: 16px;
+font-family: Roboto, sans-serif;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+border: 1px solid var(--levels-gray, #E4E4E4);
+border-radius: 8px;
+background: var(--Border-alternate, #FFFFFF);
+color: #333;
+outline: none;
+box-sizing: border-box;
+}
+.input-icon {
+position: absolute;
+left: 10px;
+top: 50%; /* Centers icon vertically */
+transform: translateY(-50%);
+width: 24px; /* Icon size */
+height: 24px;
+color: #AAAAAA; /* Icon color */
+}
+
+.full-width {
+width: 390px;
+}
+
+.form-button {
+/* You can change this value to adjust the width */
+height: 44px; /* Adjust height as needed */
+padding: 8px 20px;
+border-radius: 8px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; /* Consistent vertical alignment */
+text-align: left;
+background: var(--Brand-color, #0A3A8F); /* Background color using CSS variable */
+color: var(--Brand-3, #FFFFFF); /* Text color using CSS variable */
+border: none;
+cursor: pointer; /* Better UX with pointer cursor */
+transition: background 0.3s; /* Smooth transition for hover effects */
+display: inline-block; /* Ensure the button behaves like an inline element */
+margin-left: auto; /* Push the button to the right in a flex container */
+margin-top: 32px;
+}
+
+/* Optional: Add hover effect */
+
+
+/* Final Layout */
+.final-layout {
+width: 390px;
+display: flex;
+flex-direction: column;
+margin-top: 24px;
+}
+
+.final-layout h5 {
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: left;
+}
+
+.final-button {
+/* You can change this value to adjust the width */
+height: 44px; /* Adjust height as needed */
+padding: 8px 20px;
+border-radius: 8px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; /* Consistent vertical alignment */
+text-align: left;
+background: var(--Brand-color, #0A3A8F); /* Background color using CSS variable */
+color: var(--Brand-3, #FFFFFF); /* Text color using CSS variable */
+border: none;
+cursor: pointer; /* Better UX with pointer cursor */
+transition: background 0.3s; /* Smooth transition for hover effects */
+display: inline-block; /* Ensure the button behaves like an inline element */
+margin-left: auto; /* Push the button to the right in a flex container */
+margin-top: 32px;
+}
+
+/* Styles for the right-side layout */
+.right-side-layout {
+position: absolute; /* For precise positioning */
+top: 200px;
+left: 670px;
+width: 650px;
+height: 500px;
+object-fit: cover;
+opacity: 24;
+
+
+}
+
+.right-image {
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+
+}
+
+
+/* Right icon styling */
+.right-icon {
+position: absolute;
+right: 10px;  /* Aligns icon to the right edge with 10px padding */
+top: 50%; 
+left: 200px;
+transform: translateY(-50%) rotate(20deg); /* Adjust rotation angle here *//* Centers the icon vertically within the input field */
+width: 24px;
+height: 24px;
+padding: 5px;
+/* Adjust padding for icon within its container */
+opacity: 1;  /* Ensures the icon is visible */
+color: #AAAAAA; /* Adjust color if needed */
+}
+.right-icon1 {
+position: absolute;
+right: 10px;  /* Aligns icon to the right edge with 10px padding */
+top: 50%; 
+left: 360px;
+transform: translateY(-50%); /* Adjust rotation angle here *//* Centers the icon vertically within the input field */
+width: 24px;
+height: 24px;
+/* Adjust padding for icon within its container */
+opacity: 1;  /* Ensures the icon is visible */
+color: #AAAAAA; /* Adjust color if needed */
+}
+
+
+       /* section 2 */
+
+       /* First Layout Container */
+.first-layout1 {
+width: 220px;
+height: 100%;
+position: relative;
+gap: 0px;
+opacity: 1;
+background-color: #fff;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: start;
+margin-left: 20px;
+
+}
+
+/* Primary Image Styling */
+/* Main Image Styling */
+.main-image {
+/* For precise positioning */
+width: 32px;          /* Updated width */
+height: 32px;         /* Updated height */
+left: 37px;              /* Aligns the image to the left side */
+top: 0;               /* Optionally set top position */
+margin-left: 0;       /* Ensures no additional left margin */
+}
+
+
+
+/* Layout Sections (Icon and Text) */
+.layout-section {
+width: 180px;
+height: 48px;
+display: flex;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+border-radius: 4px;
+background-color: var(--Brand-color, #0A3A8F); /* Primary brand color */
+opacity: 1;
+cursor: pointer;
+}
+.layout-section1 {
+width: 180px;
+height: 48px;
+display: flex;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+border-radius: 4px;
+/* Adjust spacing between sections */
+opacity: 1;
+background: var(--levels-gray, #E4E4E4);
+cursor: pointer;
+
+}
+
+.layout-section3 {
+width: 180px;
+height: 48px;
+display: flex;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+border-radius: 4px;
+background: var(--levels-gray, #E4E4E4);
+opacity: 1;
+
+
+}
+.layout-section2{
+width: 180px;
+height: 48px;
+display: flex;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+border-radius: 4px;
+/* Adjust spacing between sections */
+opacity: 1;
+background-color: var(--Brand-color, #0A3A8F); /* Primary brand color */
+
+
+}
+/* Section Icon Styling */
+.section-icon {
+width: 32px;
+height: 32px;
+padding: 5.33px;
+opacity: 1;
+
+
+}
+
+/* Section Text Styling */
+.section-text {
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color:#FFFFFF ;
+}
+.section-text1 {
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: var(--Dark-gray, #ffffff);
+
+}
+
+.section-text2 {
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: var(--Dark-gray, #666666);
+
+}
+/* Bottom Button Styling */
+.bottom-button {
+width: 180px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 8px 16px;
+gap: 8px;
+border-radius: 4px 0px 0px 0px;
+
+
+background: var(--levels-gray, #E4E4E4);
+
+color: #FF3B30;
+border: none;
+cursor: pointer;
+opacity: 1;
+}
+.bottom-left {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+color: #FF3B30;
+border: none;
+cursor: pointer;
+opacity: 1;
+}
+.top-left{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+border: none;
+cursor: pointer;
+opacity: 1; 
+}
+/* Button Icon Styling */
+.button-icon {
+width: 32px;
+height: 32px;
+opacity: 1;
+}
+
+/* Button Text Styling */
+.button-text {
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+}
+
