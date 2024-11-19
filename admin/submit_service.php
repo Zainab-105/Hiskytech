@@ -41,17 +41,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     }
                 }
             }
-
-            echo "Service created successfully!";
-      header("Location:services.php");
+            header("location:services.php");
+ $msg = '<div class="alert alert-success">Service created successfully!<a href="services.php">View Sevices</a></div>';
+  
         } else {
-            echo "Error uploading service icon.";
+            $msg = '<div class="alert alert-danger">Error uploading service icon.';
+
         }
     } else {
-        echo "Error uploading service icon.";
+        $msg = '<div class="alert alert-danger">Error uploading service icon.';
+       
     }
 } else {
-    echo "Invalid request.";
+    $msg = '<div class="alert alert-danger">Invalid request.';
 }
 
 $conn->close();

@@ -2,6 +2,7 @@
 include('includes/head.php');
 include('includes/config.php');
 ?>
+
 <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -18,95 +19,53 @@ include('includes/config.php');
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+               <?php if (!empty($msg)) {
+                        echo $msg;
+                    }
+                    ?>
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Services</h1>
-                        <a href="services.php" class="btn btn-primary">Add Services</a>
+                        <h1 class="h3 mb-0 text-gray-800">Add Services</h1>
+                        
                     </div>
+                  
 
-                    <!-- Content Row -->
-                    <div class="row">
-    <div class="col-lg-12">
-        <table class="myTable table table-bordered table-hover dt-responsive" style="background-color:white">
-            <thead>
-                <tr>
-                    <th>Sr.</th>
-                    <th>Service Name</th>
-                    <th>Service Icon</th>
-                    <th>Service Details</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                    $a = 1;
-                    $sql = "SELECT * FROM services ORDER BY id DESC";
-                    $query = mysqli_query($conn, $sql);
-                    if ($query) {
-                        while ($row = mysqli_fetch_array($query)) {
-                            $service_id = $row['id'];
-                ?>
-                            <tr>
-                                <!-- Sr. No. -->
-                                <td><?php echo $a; ?></td>
+        <form action="submit_service.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Service Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
 
-                                <!-- Service Name Column -->
-                                <td><?php echo $row['name']; ?></td>
+            <div class="form-group">
+                <label for="icon">Service Icon (Image Path):</label>
+                <input type="file" id="icon" name="icon" class="form-control" required placeholder="Path to service icon image">
+            </div>
 
-                                <!-- Service Icon Column -->
-                                <td>
-                                    <?php if (!empty($row['icon'])) { ?>
-                                        <img src="<?php echo $row['icon']; ?>" alt="Service Icon" width="50" height="50">
-                                    <?php } else { ?>
-                                        No Icon
-                                    <?php } ?>
-                                </td>
+            <div class="form-group">
+                <label for="description">Service Description:</label>
+                <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
+            </div>
 
-                                <!-- Service Details Column -->
-                                <td>
-                                    <strong>Heading:</strong> <?php echo $row['heading']; ?><br>
-                                    <strong>Description:</strong> <?php echo $row['description']; ?><br>
-                                    <strong>Language Icons:</strong><br>
-                                    <?php
-                                        // Fetch associated language icons for this service
-                                        $icon_sql = "SELECT image_path FROM language_icons WHERE service_id = $service_id";
-                                        $icon_query = mysqli_query($conn, $icon_sql);
-                                        if ($icon_query && mysqli_num_rows($icon_query) > 0) {
-                                            while ($icon_row = mysqli_fetch_array($icon_query)) {
-                                                echo '<img src="' . $icon_row['image_path'] . '" alt="Language Icon" width="30" height="30" style="margin-right: 5px;">';
-                                            }
-                                        } else {
-                                            echo "No language icons available.";
-                                        }
-                                    ?>
-                                </td>
+            <div class="form-group">
+                <label for="heading">Service Heading:</label>
+                <input type="text" id="heading" name="heading" class="form-control" required>
+            </div>
 
-                                <!-- Action Column -->
-                                <td>
-                                    <a href="action.php?id=<?= $service_id ?>" class="delete-btn"><i class="fas fa-trash-alt gray-icon"></i></a>
-                                    <a href="action.php?id=<?= $service_id ?>" class="edit-btn"><i class="fas fa-edit gray-icon"></i></a>
-                                </td>
-                            </tr>
-                <?php
-                            $a++;
-                        }
-                    } else {
-                        echo "Error: " . mysqli_error($conn);
-                    }
-                ?>
-            </tbody>
-        </table>
+            <div class="form-group">
+                <label for="language_icons">Language Icons (Upload multiple images):</label>
+                <input type="file" id="language_icons" name="language_icons[]" class="form-control-file" accept="image/*" multiple required>
+            </div>
+
+            <button type="submit" class="btn" style="background-color:#0a3a8f; color:white;">Create Service</button>
+        </form>
     </div>
-</div>
-
-
+                 
                     
 
                    
      
 
-        </div>
+        
         <!-- End of Content Wrapper -->
 
     </div>

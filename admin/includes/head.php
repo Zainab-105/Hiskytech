@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>HiSkyTech - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,6 +43,23 @@
     table tr{
         border-bottom: 0.5px solid gray;
     }
+    /* Unread messages (e.g., bold or highlighted) */
+.unread {
+    font-weight: bold;
+    background-color: #f9f9f9; /* light background */
+}
+
+/* Read messages (e.g., normal font weight) */
+.read {
+    font-weight: normal;
+    background-color: #e0e0e0; /* faded background */
+}
+
+/* Hover effect for both types of messages */
+.message:hover {
+    background-color: #f1f1f1;
+}
+
 </style>
 </head>
 

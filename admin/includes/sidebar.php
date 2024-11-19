@@ -32,11 +32,11 @@
     <li class="nav-item">
     <a class="nav-link" href="index.php">
     <i class="fa-regular fa-user"></i>
-        <span>Users</span>
+        <span>Team Members</span>
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="add-services.php">
+    <a class="nav-link" href="services.php">
     <i class="fa-solid fa-list"></i>
         <span>Services</span>
     </a>
@@ -48,16 +48,27 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="payment_history.php">
-    <i class="fa-solid fa-basket-shopping"></i>
-        <span>Payment History</span>
+    <a class="nav-link" href="videos.php">
+    <i class="fa-solid fa-video"></i>
+        <span>Videos</span>
     </a>
 </li>
-
+<li class="nav-item">
+    <a class="nav-link" href="info.php">
+    <i class="fa-solid fa-circle-info"></i>
+        <span>contact info</span>
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="messages.php">
+    <i class="fa-solid fa-envelope"></i>
+        <span>Messages</span>
+    </a>
+</li>
  
 
     <!-- Divider -->
-    <hr class="sidebar-divider">
+    <!-- <hr class="sidebar-divider"> -->
 
     <!-- Sidebar Toggler (Sidebar) -->
     <!-- <div class="text-center d-none d-md-inline">

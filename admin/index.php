@@ -1,5 +1,6 @@
 <?php
 include('includes/head.php');
+
 include('includes/config.php');
 ?>
 <body id="page-top">
@@ -18,11 +19,15 @@ include('includes/config.php');
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                <?php
+                    if (!empty($msg)) {
+                        echo $msg;
+                    }
+                    ?>
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Users</h1>
-                        
+                        <h1 class="h3 mb-0 text-gray-800">Team Members</h1>
+                        <a href="add-member.php" class="btn btn-primary">Add New Member</a>
                     </div>
 
                     <!-- Content Row -->
@@ -30,49 +35,55 @@ include('includes/config.php');
 
                        
                     <div class="col-lg-12">
-                     
+                    <table class="myTable table table-bordered table-hover dt-responsive" style="background-color:white">
+    <thead>
+        <tr>
+            <th>Sr.</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Profile Image</th>
+            <th>URLs</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php
+        $a = 1;
+        $sql = "SELECT * FROM team_members ORDER BY id DESC";
+        $query = mysqli_query($conn, $sql);
+        if ($query) {
+            while ($row = mysqli_fetch_array($query)) {
+                $id = $row['id'];
+    ?>
+        <tr>
+            <td><?php echo $a; ?></td>
+            <td><?php echo $row['name']; ?></td>
+            <td><?php echo $row['role']; ?></td>
+            <td>
+                <img src="<?php echo $row['profile_image']; ?>" alt="Profile Image" style="width: 50px; height: 50px; object-fit: cover;">
+            </td>
+            <td>
+                <a href="<?php echo $row['linkedin_url']; ?>" target="_blank">LinkedIn</a> |
+                <a href="<?php echo $row['facebook_url']; ?>" target="_blank">Facebook</a> |
+                <a href="<?php echo $row['instagram_url']; ?>" target="_blank">Instagram</a>
+            </td>
+            <td>
+                <a href="delete_team_member.php?id=<?= $row['id'] ?>" class="delete-btn"><i class="fas fa-trash-alt gray-icon"></i></a>
+                <a href="edit_team_member.php?id=<?= $row['id'] ?>" class="edit-btn"><i class="fas fa-edit gray-icon"></i></a>
+            </td>
+        </tr>
+    <?php
+                $a++;
+            }
+        } else {
+            echo "<tr><td colspan='6'>No records found.</td></tr>";
+        }
+    ?>
+    </tbody>
+</table>
 
-                     <table class='myTable' class="table table-bordered table-hover dt-responsive" style="backgroung_colr:white">
+</div>
 
-                         <thead>
-                             <tr>
-                                 <th>Sr.</th>
-                                 <th>Username</th>
-                                 <th>Email</th>
-                               <th>Action</th>
-                             </tr>
-                         </thead>
-                         <tbody>
-                         <?php
-                                $a = 1;
-                                $sql = "SELECT * FROM users ORDER BY uid DESC";
-                                $query = mysqli_query($conn, $sql);
-                                if ($query) {
-                                    while ($row = mysqli_fetch_array($query)) {
-                                        $id = $row['uid'];
-                                ?>
-                                     <tr>
-                                         <td><?php echo $a ?></td>
-                                         <td><?php echo $row['username']; ?></td>
-                                        
-                                         <th><?php echo $row['email']; ?></th>
-                                         <td>
-                                             <a href="action.php?id=<?= $row['uid'] ?>" class="delete-btn"><i class="fas fa-trash-alt gray-icon"></i></a>
-                                            
-                                           
-                                         </td>
-                                     </tr>
-                                     <?php
-                                        $a++;
-                                    }
-                                } else {
-                                    echo "Error: " . mysqli_error($conn);
-                                }
-                                 ?>
-
-                         </tbody>
-                     </table>
-                 </div>
                       
 
                        
