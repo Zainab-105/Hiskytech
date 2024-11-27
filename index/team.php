@@ -12,13 +12,12 @@
             </div>
             <div class="row">
                 <div class="col-md-3 team-card">
-                    <div class="front-img">
-                        <img src="image/ali.jpeg" alt="Front Image">
-                    </div>
+               
                     <div class="back-img">
                         <div class="card-image">
                             <img src="image/ali.jpeg" alt="Ali Hamza">
                         </div>
+                        <div class="content">
                         <div class="card-content">
                             <h3>Ali Hamza</h3>
                             <p>Android Developer</p>
@@ -31,16 +30,17 @@
                             <a href="https://www.instagram.com/alihamx_a/profilecard/?igsh=ejZwYmRmNTNpc2dy"><i class="fab fa-instagram custom-icon-large"></i>
                             </a>
                         </div>
+                        </div>
+                   
                     </div>
                 </div>
                 <div class="col-md-3 team-card">
-                    <div class="front-img">
-                        <img src="image/ehtasham.webp" alt="Front Image">
-                    </div>
+       
                     <div class="back-img">
                         <div class="card-image">
                             <img src="image/ehtasham.webp" alt="Ali Hamza">
                         </div>
+                        <div class="content">
                         <div class="card-content">
                             <h3>Atsham Zafar</h3>
                             <p>UI/UX Designer</p>
@@ -53,16 +53,17 @@
                             <a href="https://www.instagram.com/atsham.uxui/profilecard/?igsh=MXZvd2d1dWJkdjVubw"><i class="fab fa-instagram custom-icon-large"></i>
                             </a>
                         </div>
+                        </div>
+                   
                     </div>
                 </div>
                 <div class="col-md-3 team-card">
-                    <div class="front-img">
-                        <img src="image/raheel.jpg" alt="Front Image">
-                    </div>
+                  
                     <div class="back-img">
                         <div class="card-image">
                             <img src="image/raheel.jpg" alt="Ali Hamza">
                         </div>
+                        <div class="content">
                         <div class="card-content">
                             <h3>Raheel Ahmad</h3>
                             <p>Web Developer</p>
@@ -76,16 +77,17 @@
                             </a>
 
                         </div>
+                        </div>
+                 
                     </div>
                 </div>
                 <div class="col-md-3 team-card">
-                    <div class="front-img">
-                        <img src="image/ahmad.jpeg" alt="Front Image">
-                    </div>
+                
                     <div class="back-img">
                         <div class="card-image">
                             <img src="image/ahmad.jpeg" alt="Ali Hamza">
                         </div>
+                        <div class="content">
                         <div class="card-content">
                             <h3>Ahmad Ullah</h3>
                             <p>Android Developer</p>
@@ -98,6 +100,8 @@
                             <a href="https://www.instagram.com/codee_builder?igsh=cGkxeW5jM21idnFs"><i class="fab fa-instagram custom-icon-large"></i>
                             </a>
                         </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>

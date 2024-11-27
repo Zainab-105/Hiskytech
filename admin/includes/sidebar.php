@@ -65,6 +65,22 @@
         <span>Messages</span>
     </a>
 </li>
+<li class="nav-item">
+    <a class="nav-link" href="jobs.php">
+    <i class="fa-solid fa-suitcase"></i>
+
+        <span>Carreer Opportunities</span>
+    </a>
+</li>
+ 
+<li class="nav-item">
+    <a class="nav-link" href="courses.php">
+    <i class="fa-solid fa-laptop"></i>
+
+        <span>Courses</span>
+    </a>
+</li>
+ 
  
 
     <!-- Divider -->

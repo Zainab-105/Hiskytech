@@ -65,6 +65,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/script.js"></script>
     <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    navbarCollapse.classList.toggle('show'); // Toggle the display of the navbar
+});
+
         $('.center').slick({
             centerMode: true,
             centerPadding: '60px',

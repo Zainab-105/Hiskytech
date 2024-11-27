@@ -12,15 +12,15 @@
                         <div class="recent-flip-card-inner" id="card1">
                             <div class="recent-flip-card-front recent-project-card">
                                 <div class="recent-image-container d-flex justify-content-center align-items-center"
-                                    style="height: 82px;">
+                                    >
                                     <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt=""
                                         class="recent-card-img-top img-fluid mt-5"
                                         style="max-width: 100%; height: auto;">
                                 </div>
                                 <hr class="mt-5" style="width: 50%; margin: auto;">
                                 <div class="card-body">
-                                    <p class="recent-card-text pt-5">A collaboration hub that connects <br> teams
-                                        through channels, making <br> communication and project <br> management
+                                    <p class="recent-card-text pt-5">A collaboration hub that connects teams
+                                        through channels, making communication and project management
                                         seamless.</p>
                                 </div>
                             </div>
@@ -62,8 +62,8 @@
                                 </div>
                                 <hr class="mt-5" style="width: 50%; margin: auto;">
                                 <div class="card-body">
-                                    <p class="recent-card-text pt-5">A collaboration hub that connects <br> teams
-                                        through channels, making <br> communication and project <br> management
+                                <p class="recent-card-text pt-5">A collaboration hub that connects teams
+                                        through channels, making communication and project management
                                         seamless.</p>
                                 </div>
                             </div>
@@ -104,26 +104,24 @@
                                 </div>
                                 <hr class="mt-5" style="width: 50%; margin: auto;">
                                 <div class="card-body">
-                                    <p class="recent-card-text pt-5">A collaboration hub that connects <br> teams
-                                        through channels, making <br> communication and project <br> management
+                                <p class="recent-card-text pt-5">A collaboration hub that connects teams
+                                        through channels, making communication and project management
                                         seamless.</p>
                                 </div>
                             </div>
 
                             <!-- Back of the third card -->
                             <div class="recent-flip-card-back recent-project-card-back">
-                                <div class="card-body">
+                                <div class="">
                                     <div class="recent-image-container mt-5">
                                         <img src="image/slack 1.png" alt="Software Icon" class="img-fluid"
                                            >
                                     </div>
                                     <h4 class="recent-text">Slack</h4>
                                     <div class="backbuttons">
-                                        <a href="#" class="btn-light-gray mt-3 text-center"
-                                            style="border-radius: 50px; display: block; line-height: 38px;">Communication Software</a>
-                                        <a href="#" class=" btn-blue mt-5 text-center"
-                                            style="border-radius: 50px; display: block;" class=" btn-blue mt-5"
-                                            style="border-radius: 50px; line-height: 32px;">View Project Details</a>
+                                    <a href="#" class="btn-light-gray mt-3 text-center">Communication Software</a>
+<a href="#" class="btn-blue mt-5 text-center">View Project Details</a>
+
                                     </div>
 
 
