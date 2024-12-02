@@ -7,10 +7,11 @@
                 <div>
                     <p class="team-text">At HiSkyTech, we pride ourselves on delivering exceptional technology
                         solutions tailored to our
-                        clients' unique needs. But don't just take our word for it – hear from some of our satisfied clients!</p>
+                        clients' unique needs. But don't just take our word for it – hear from some of our satisfied
+                        clients!</p>
                 </div>
             </div>
-         
+
 
             <div class="testimonial-slider center">
                 <!-- Testimonial Card 1 -->

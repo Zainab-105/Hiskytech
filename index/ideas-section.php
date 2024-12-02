@@ -1,4 +1,4 @@
-<section class="ideas">
+<section class="ideas py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 idea-heading">
@@ -20,9 +20,9 @@
                 <video src="videos/Hi-Sky.mp4" controls style="width: 100%; max-width: 100%; height: auto;">
                     Your browser does not support the video tag.
                 </video>
-                
+
             </div>
-            
+
         </div>
         </div>
     </section>

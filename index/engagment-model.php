@@ -1,4 +1,4 @@
-<section class="engagment-model">
+<!-- <section class="engagment-model">
         <div class="container">
             <div class="service-heading">
                 <div>
@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="row">
-                <!-- Right column: Engagement model cards -->
+                
                 <div class="col-md-6">
                     <div class="row">
 
@@ -50,7 +50,7 @@
 
                     </div>
                 </div>
-                <!-- Left column: Title, text, and image -->
+               
                 <div class="col-md-6">
                     <div class="engagment-left">
                         <img src="image/engagment-section-img.png" alt="">
@@ -58,4 +58,46 @@
                 </div>
 
 
+    </section> -->
+    <section class="engagment-model">
+        <div class="container">
+            <div class="service-heading">
+                <div>
+                    <h2>Our Engagement Models</h2>
+                </div>
+                <div>
+                    <p>We offer tailored engagement models to meet your business needs or learning goals. Whether you
+                        need development services or want to build new skills, we have the right solution. </p>
+                </div>
+            </div>
+            <div class="engagment-row">
+                <div class="tag-container">
+                    <div class="tag">
+                        <img src="https://via.placeholder.com/24" alt="Icon 1"><h6>   We understand your goals and vision</h6>
+                 
+                    </div>
+                    <div class="tag">
+                        <img src="https://via.placeholder.com/24" alt="Icon 2">
+                        <h6> We create a tailored tech strategy</h6>
+                       
+                    </div>
+                    <div class="tag">
+                        <img src="https://via.placeholder.com/24" alt="Icon 3"><h6>
+                        We build with precision and efficiency
+                        </h6>
+                     
+                    </div>
+                    <div class="tag">
+                        <img src="https://via.placeholder.com/24" alt="Icon 4">
+                        <h6>We ensure quality and reliability</h6>
+                        
+                    </div>
+                    <div class="tag">
+                        <img src="https://via.placeholder.com/24" alt="Icon 5">
+                        <h6> We support you through deployment and beyond</h6>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>

@@ -1,4 +1,4 @@
-<section class="team">
+<section class="team py-2">
         <div class="container">
             <div class="service-heading">
                 <div>
@@ -10,7 +10,7 @@
                         solutions.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row responsive">
                 <div class="col-md-3 team-card">
                
                     <div class="back-img">
