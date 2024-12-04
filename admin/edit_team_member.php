@@ -1,7 +1,8 @@
 <?php
 include('includes/head.php');
 include('includes/config.php');
-$msg='';
+$msg = '';
+
 // Fetch the member details based on the `id` passed via GET
 if (isset($_GET['id'])) {
     $id = intval($_GET['id']);
@@ -18,30 +19,39 @@ if (isset($_GET['id'])) {
     exit;
 }
 
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $role = mysqli_real_escape_string($conn, $_POST['role']);
 
-    $profile_image = $member['profile_image']; 
+    $profile_image = $member['profile_image'];
     if (!empty($_FILES['profile_image']['name'])) {
         $image_name = time() . '_' . $_FILES['profile_image']['name'];
-        $target_dir = "uploads/team_members/";
+        $target_dir = "uploads/";
         $target_file = $target_dir . basename($image_name);
 
+        // Validate image type
+        $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+        $allowed_types = ['jpg', 'jpeg', 'png', 'gif'];
+        if (!in_array($imageFileType, $allowed_types)) {
+            echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+            exit;
+        }
 
+        // Move uploaded file
         if (move_uploaded_file($_FILES['profile_image']['tmp_name'], $target_file)) {
             $profile_image = $target_file;
         } else {
-            echo "Failed to upload image.";
+            echo "Failed to upload image. Error: " . $_FILES['profile_image']['error'];
+            exit;
         }
     }
 
-
     $update_sql = "UPDATE team_members SET name='$name', role='$role', profile_image='$profile_image' WHERE id=$id";
     if (mysqli_query($conn, $update_sql)) {
+        $msg = '<div class="alert alert-success">Data Updated successfully. <a href="index.php">View Updated Data</a></div>';
+        echo $msg; // Display message before redirect
         header('location:index.php');
-   $msg = '<div class="alert alert-success">Data Updated successfully.<a href="index.php">View Updated Data</a></div>';;
+        exit;
     } else {
         echo "Error updating record: " . mysqli_error($conn);
     }

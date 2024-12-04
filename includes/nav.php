@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row align-items-center box2">
             <!-- First Column: Logo -->
-            <div class="col-md-3 text-start">
+            <div class="col-md-2 text-start">
                 <a href="index.php">
                     <img src="image/HiSkyTech Png_LOGO-Horizantal-02 4.png" alt="Logo" class="img-fluid"
                         style="max-height: 80px;">
@@ -12,29 +12,36 @@
             </div>
 
             <!-- Second Column: Navigation Bar -->
-            <div class="col-md-6">
-                <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="col-md-8">
+                <nav class=" navbar-expand-lg " style="background-color:transparent !important">
                     <div class="navbar-collapse justify-content-center">
-                        <ul class="navbar-nav" style="font-size: 16px;">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about-us">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="projects.html">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#our-team">Our Team</a>
-                            </li>
-                        </ul>
+                    <ul class="navbar-nav" >
+        <li class="nav-item">
+          <a class="nav-link" href="#about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-team">Carrers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-team">Hire Developer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-team">Our Team</a>
+        </li>
+       
+      </ul>
                     </div>
                 </nav>
             </div>
 
             <!-- Third Column: Contact Us Button -->
-            <div class="col-md-3 text-center contact">
+            <div class="col-md-2 text-center contact">
                 <a href="#contact" class="mt-3"
                     style="background-color: rgb(10,58,143); height: 44px; width: 158px; border-radius: 8px;">
                     SignUp or Login
@@ -46,7 +53,7 @@
 
 <!-- Section for Mobile -->
 <section class="section-A d-block d-lg-none">
-    <div class="container">
+   
   <!-- Bootstrap 5 Example -->
 <nav class="navbar navbar-expand-md" style="font-size: 16px; background-color:#F6F7FC;">
   <div class="container-fluid">
@@ -62,19 +69,25 @@
           <a class="nav-link" href="#about-us">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#services">Courses</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="projects.html">Projects</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#our-team">Carrers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-team">Hire Developer</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#our-team">Our Team</a>
         </li>
         <li class="nav-item text-center contact">
-          <a href="#contact" class="mt-3" style="background-color: rgb(10,58,143); padding:16px 0px;width: 158px; border-radius: 8px; color:white;font-size: 18px;">SignUp or Login</a>
+          <a href="#contact" class="mt-3" style="background-color: rgb(10,58,143); padding:13px 0px;width: 300px; border-radius:100px; color:white;font-size: 18px;">SignUp or Login</a>
         </li>
       </ul>
-    </div>
+   
   </div>
 </nav>
 

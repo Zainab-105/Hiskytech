@@ -1,8 +1,15 @@
 
 <section class="recent-projects-section">
         <!-- Section Heading -->
-        <h1 class="recent-projects-heading">Our Recent Projects</h1>
-        <p class="recent-projects-paragraph">Explore the innovative solutions we’ve delivered.</p>
+        <div class="service-heading">
+                <div>
+                    <h2>Our Recent Projects</h2>
+                </div>
+                <div>
+                    <p>Explore the innovative solutions we’ve delivered.</p>
+                </div>
+            </div>
+
 
         <div class="recent-projects-container">
             <div class="row justify-content-center">

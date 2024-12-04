@@ -1,3 +1,6 @@
+<?php
+include('includes/connection.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +16,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet">
 </head>
 
 
@@ -67,14 +72,46 @@
 
     <!-- jQuery 3.x Slim Version CDN -->
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> <!-- Slick Carousel -->
 <script src="js/script.js"></script> <!-- Your custom JS script -->
+<script>
+$(document).ready(function() {
+    // Handle form submission for both desktop and mobile versions
+    $('#contactForm, .mobile-version .contact-form').on('submit', function(e) {
+        e.preventDefault();  // Prevent default form submission
 
+        var form = $(this);  // Cache the form reference
+        var formData = form.serialize();  // Serialize form data
+
+        // Perform AJAX request
+        $.ajax({
+            url: 'contact-form-handler.php',  // Path to the PHP handler
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function(response) {
+                if (response.status == 'success') {
+                    // Show success message inside the form
+                    form.find('.response').html('<div class="alert alert-success">' + response.message + '</div>');
+                    form[0].reset();  // Clear form after success
+                } else {
+                    form.find('.response').html('<div class="alert alert-danger">' + response.message + '</div>');
+                }
+            },
+            error: function() {
+                form.find('.response').html('<div class="alert alert-danger">An error occurred. Please try again later.</div>');
+            }
+        });
+    });
+});
+
+
+    </script>
 <!-- Custom Scripts for Slick Carousel and Navbar -->
 <script>
+
     $('.responsive').slick({
         centerMode: true,
         centerPadding: '10px',
@@ -130,6 +167,8 @@
             ]
         });
 
+
+// on desktop view
         document.addEventListener('DOMContentLoaded', function () {
     const tagContainer = document.querySelector('.tag-container');
     const engagementSection = document.querySelector('.engagment-model');
@@ -148,6 +187,25 @@
     }, { threshold: 0.6 }); 
 
     observer.observe(tagContainer);
+});
+// on mobile view
+document.addEventListener('DOMContentLoaded', function () {
+    const tagContainer = document.querySelector('.tag-container-mobile');
+    const engagementSection = document.querySelector('.engagement-mobile');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log('Arranging tags');
+                tagContainer.classList.add('arranged');
+            } else {
+                console.log('Resetting tags');
+                tagContainer.classList.remove('arranged');
+            }
+        });
+    }, { threshold: 0.3 }); // Adjusted threshold
+
+    observer.observe(engagementSection); // Observe the correct section
 });
 
     // Custom Navbar Toggle Function
@@ -189,6 +247,8 @@
 
     observer.observe(tagContainer);
 });
+
+
 </script>
 
 </body>

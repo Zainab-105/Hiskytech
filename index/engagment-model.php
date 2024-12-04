@@ -70,31 +70,60 @@
                         need development services or want to build new skills, we have the right solution. </p>
                 </div>
             </div>
-            <div class="engagment-row">
-                <div class="tag-container">
+            <div class="engagment-row ">
+                <div class="tag-container engagement-desktop">
                     <div class="tag">
-                        <img src="https://via.placeholder.com/24" alt="Icon 1"><h6>   We understand your goals and vision</h6>
+                        <img src="image/noto-v1_handshake.png" alt="Icon 1"><h6>   We understand your goals and vision</h6>
                  
                     </div>
                     <div class="tag">
-                        <img src="https://via.placeholder.com/24" alt="Icon 2">
+                        <img src="image/strategy.png" alt="Icon 2">
                         <h6> We create a tailored tech strategy</h6>
                        
                     </div>
                     <div class="tag">
-                        <img src="https://via.placeholder.com/24" alt="Icon 3"><h6>
+                        <img src="image/logos_visual-studio-code.png" alt="Icon 3"><h6>
                         We build with precision and efficiency
                         </h6>
                      
                     </div>
                     <div class="tag">
-                        <img src="https://via.placeholder.com/24" alt="Icon 4">
+                        <img src="image/fluent-color_shield-checkmark-20.png" alt="Icon 4">
                         <h6>We ensure quality and reliability</h6>
                         
                     </div>
                     <div class="tag">
-                        <img src="https://via.placeholder.com/24" alt="Icon 5">
+                        <img src="image/twemoji_rocket.png" alt="Icon 5">
                         <h6> We support you through deployment and beyond</h6>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="engagement-mobile">
+                <div class="tag-container-mobile">
+                    <div class="tag-mobile">
+                        <img src="image/noto-v1_handshake.png" alt="Icon 1"><h6>   We understand your goals and vision</h6>
+                 
+                    </div>
+                    <div class="tag-mobile">
+                        <img src="image/strategy.png" alt="Icon 2">
+                        <h6> We create a tailored tech strategy</h6>
+                       
+                    </div>
+                    <div class="tag-mobile">
+                        <img src="image/logos_visual-studio-code.png" alt="Icon 3"><h6>
+                        We build with precision and efficiency
+                        </h6>
+                     
+                    </div>
+                    <div class="tag-mobile">
+                        <img src="image/fluent-color_shield-checkmark-20.png" alt="Icon 4">
+                        <h6>We ensure quality and reliability</h6>
+                        
+                    </div>
+                    <div class="tag-mobile">
+                        <img src="image/twemoji_rocket.png" alt="Icon 5">
+                        <h6> We support you through deployment <br> and beyond</h6>
                        
                     </div>
                 </div>

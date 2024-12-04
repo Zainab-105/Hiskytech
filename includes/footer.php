@@ -7,22 +7,22 @@
                     <div class="card custom-card">
                         <!-- Card Image -->
                         <img src="image/footer logo.png" alt="" class="card-img">
-                        <hr class="mt-4" style="width: 90%; margin: auto;border: 1px solid #E4E4E4">
+                        <hr class="mt-2" style="width: 90%; margin: auto;border: 1px solid #E4E4E4">
                         <!-- Font Awesome and Paragraph -->
-                        <div class="card-content">
+                        <div class="">
                             <i class="fas fa-star custom-icon"></i>
                             <p class="custom-text" style="color: black;">5 Star Reviews</p>
                         </div>
 
                         <!-- Row of Circular Images (50x50) -->
-                        <div class="image-row d-flex justify-content-center mt-3">
+                        <div class="image-row d-flex justify-content-center mt-2">
                             <img src="image/Ellipse 1.png" alt="" class="rounded-circle img-small">
                             <img src="image/Ellipse 2.png" alt="" class="rounded-circle img-small">
                             <img src="image/Ellipse 3.png" alt="" class="rounded-circle img-small">
                             <img src="image/Ellipse 4.png" alt="" class="rounded-circle img-small">
                             <img src="image/Ellipse 5.png" alt="" class="rounded-circle img-small">
                         </div>
-                        <hr class="mt-4" style="width: 90%; margin: auto;border: 1px solid #E4E4E4">
+                        <hr class="mt-2" style="width: 90%; margin: auto;border: 1px solid #E4E4E4">
 
                         <p class="custom-paragraph">Our Socials</p>
                         <div class="icon-row d-flex justify-content-center mt-3">

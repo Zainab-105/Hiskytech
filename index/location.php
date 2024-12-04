@@ -1,6 +1,6 @@
-<section class="location-section py-3" style="padding: 50px 0; background-color: #FFFFFF;">
+<section class="location-section" >
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between">
                 <!-- First Column: Map (Desktop/Laptop) -->
                 <div class="col-md-7 d-flex justify-content-center align-items-center map-desktop d-none d-lg-flex "
                     style="height: 500px;">
@@ -13,7 +13,7 @@
                 </div>
 
                 <!-- Second Column: Text Section -->
-                <div class="col-md-5 text-desktop" style="padding-top: 130px;">
+                <div class="col-md-5 text-desktop" style="padding-top: 130px;padding-left:90px;">
                     <p class="location-title">Our Location</p>
                     <h4 class="location-subheading">Connecting with You <br> Near and Far.</h4>
                     <p class="location-head-office" style="font-size: 24px; font-weight: 500; color: black;">Head Office

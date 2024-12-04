@@ -1,4 +1,4 @@
-<section class="ideas py-3">
+<section class="ideas">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 idea-heading">
@@ -16,8 +16,13 @@
                 </div>
 
             </div>
+            <?php
+            $sql="SELECT * FROM company_video";
+            $query=mysqli_query($conn,$sql);
+            $video=mysqli_fetch_assoc($query);
+            ?>
             <div class="row idea-img">
-                <video src="videos/Hi-Sky.mp4" controls style="width: 100%; max-width: 100%; height: auto;">
+                <video src="admin/uploads/videos/<?=$video['video']?>" controls style="width: 100%; max-width: 100%; height: auto;">
                     Your browser does not support the video tag.
                 </video>
 
