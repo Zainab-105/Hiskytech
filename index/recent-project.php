@@ -12,24 +12,30 @@
 
 
         <div class="recent-projects-container">
-            <div class="row justify-content-center">
+        <div class="row justify-content-center">
                 <!-- Card 1 -->
-                <div class="col-md-4">
+                <?php
+        $a = 1;
+        $sql = "SELECT * FROM projects ORDER BY id DESC";
+        $query = mysqli_query($conn, $sql);
+        if ($query) {
+            while ($row = mysqli_fetch_array($query)) {
+                $id = $row['id'];
+    ?>
+                <div class="col-md">
                     <div class="recent-flip-card">
                         <div class="recent-flip-card-inner" id="card1">
                             <div class="recent-flip-card-front recent-project-card">
                                 <div class="card-body">
                                 <div class="recent-image-container"
                                     >
-                                    <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt=""
+                                    <img src="admin/<?php echo $row['project_logo']; ?>" alt=""
                                         class="recent-card-img-top img-fluid"
-                                        style="max-width: 100%; height: auto;">
+                                        style="max-width: 200px; height: 82px">
                                 </div>
                                 <hr class="mt-3" style="width: 50%; margin: auto;">
                                 <div >
-                                    <p class="recent-card-text">A collaboration hub that connects  teams
-                                        through channels, makingcommunication and project  management
-                                        seamless.</p>
+                                    <p class="recent-card-text">  <?php echo $row['description']; ?></p>
                                 </div>
                                 </div>
                               
@@ -39,16 +45,14 @@
                             <div class="recent-flip-card-back recent-project-card-back">
                                 <div class="card-body">
                                     <div class="recent-image-container">
-                                        <img src="image/slack 1.png" alt="Software Icon" class="img-fluid">
+                                        <img src="admin/<?php echo $row['project_overview_image']; ?>" alt="Software Icon" class="img-fluid" style="width:237px;height:135px;object-fit:cover;">
                                     </div>
-                                    <h4 class="recent-text">Slack</h4>
+                                    <h4 class="recent-text" style="color:#1B1B1E;"><?php echo $row['project_name']; ?></h4>
                                     <div class="backbuttons">
                                         <a href="#" class="btn-light-gray mt-3 text-center"
-                                            style="border-radius: 50px; display: block; line-height: 38px; ">Communication
-                                            Software</a>
+                                            style="border-radius: 50px; display: block; line-height: 38px; "><?php echo $row['field']; ?></a>
                                         <a href="#" class=" btn-blue mt-3 text-center"
-                                            style="border-radius: 50px; display: block;" class=" btn-blue "
-                                            style="border-radius: 50px; line-height: 32px;">View Project Details</a>
+                                            style="border-radius: 50px; display: block; line-height: 38px;">View Project Details</a>
                                     </div>
 
 
@@ -58,96 +62,13 @@
                     </div>
                 </div>
 
-                <!-- Repeat Card 2 and Card 3 similarly with updated class names -->
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="recent-flip-card">
-                        <div class="recent-flip-card-inner" id="card1">
-                            <div class="recent-flip-card-front recent-project-card">
-                                <div class="card-body">
-                                <div class="recent-image-container"
-                                    >
-                                    <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt=""
-                                        class="recent-card-img-top img-fluid"
-                                        style="max-width: 100%; height: auto;">
-                                </div>
-                                <hr class="mt-3" style="width: 50%; margin: auto;">
-                                <div >
-                                    <p class="recent-card-text">A collaboration hub that connects  teams
-                                        through channels, makingcommunication and project  management
-                                        seamless.</p>
-                                </div>
-                                </div>
-                              
-                            </div>
-
-                            <!-- Back of the first card -->
-                            <div class="recent-flip-card-back recent-project-card-back">
-                                <div class="card-body">
-                                    <div class="recent-image-container">
-                                        <img src="image/slack 1.png" alt="Software Icon" class="img-fluid">
-                                    </div>
-                                    <h4 class="recent-text">Slack</h4>
-                                    <div class="backbuttons">
-                                        <a href="#" class="btn-light-gray mt-3 text-center"
-                                            style="border-radius: 50px; display: block; line-height: 38px; ">Communication
-                                            Software</a>
-                                        <a href="#" class=" btn-blue mt-3 text-center"
-                                            style="border-radius: 50px; display: block;" class=" btn-blue "
-                                            style="border-radius: 50px; line-height: 32px;">View Project Details</a>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 (same as above) -->
-                <div class="col-md-4">
-                    <div class="recent-flip-card">
-                        <div class="recent-flip-card-inner" id="card1">
-                            <div class="recent-flip-card-front recent-project-card">
-                                <div class="card-body">
-                                <div class="recent-image-container"
-                                    >
-                                    <img src="image/5cb480b85f1b6d3fbadece78 1.png" alt=""
-                                        class="recent-card-img-top img-fluid"
-                                        style="max-width: 100%; height: auto;">
-                                </div>
-                                <hr class="mt-3" style="width: 50%; margin: auto;">
-                                <div >
-                                    <p class="recent-card-text">A collaboration hub that connects  teams
-                                        through channels, makingcommunication and project  management
-                                        seamless.</p>
-                                </div>
-                                </div>
-                              
-                            </div>
-
-                            <!-- Back of the first card -->
-                            <div class="recent-flip-card-back recent-project-card-back">
-                                <div class="card-body">
-                                    <div class="recent-image-container">
-                                        <img src="image/slack 1.png" alt="Software Icon" class="img-fluid">
-                                    </div>
-                                    <h4 class="recent-text">Slack</h4>
-                                    <div class="backbuttons">
-                                        <a href="#" class="btn-light-gray mt-3 text-center"
-                                            style="border-radius: 50px; display: block; line-height: 38px; ">Communication
-                                            Software</a>
-                                        <a href="#" class=" btn-blue mt-3 text-center"
-                                            style="border-radius: 50px; display: block;" class=" btn-blue "
-                                            style="border-radius: 50px; line-height: 32px;">View Project Details</a>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                $a++;
+            }
+        } else {
+            echo "<tr><td colspan='6'>No records found.</td></tr>";
+        }
+    ?>
             </div>
         </div>
     </section>

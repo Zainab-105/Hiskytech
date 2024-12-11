@@ -29,14 +29,9 @@ include('includes/connection.php')
 
 <?php include('index/services-section.php') ?>
 
-
 <?php include('index/achievement-section.php') ?>
 
-
 <?php include('index/recent-project.php') ?>
-
-
-
 
 <?php include('index/engagment-model.php') ?>
 
@@ -49,11 +44,9 @@ include('includes/connection.php')
 
     <!-- map -->
 
+<?php include('index/location.php') ?>
 
-    <?php include('index/location.php') ?>
-
-
-    <?php include('index/faq-section.php') ?>
+<?php include('index/faq-section.php') ?>
 
 
 

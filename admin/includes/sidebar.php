@@ -42,9 +42,9 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="display.php">
+    <a class="nav-link" href="projects.php">
     <i class="fa-brands fa-product-hunt"></i>
-        <span>Products</span>
+        <span>Projects</span>
     </a>
 </li>
 <li class="nav-item">
