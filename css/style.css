@@ -833,7 +833,7 @@ overflow: hidden;
 
 .field-back-section {
     padding-top: 150px !important;
-    background-color: #f8f8f8;
+    background-color: #F6F7FC;
     padding: 50px 0;
     padding-bottom: 150px;
 }
@@ -1433,7 +1433,7 @@ text-align: center;
 .row div a {
     color: #FFFFFF;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400 !important;
     text-decoration: none;
     line-height: 47px;
     font-size: 16px;
@@ -1723,12 +1723,11 @@ text-align: center;
 
 
 @media screen and (max-width: 768px) {
-    /* reactent-project section */
-/* General Fix for Horizontal Scroll */
+
 html, body {
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
+    overflow-x: hidden;
+    margin: 0; 
+    padding: 0; 
 }
 .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
@@ -1742,12 +1741,12 @@ text-align: left !important;
 .navbar-nav {
     margin-top: 20px !important;
     margin-left: 0px !important;
-    /* Adjust space between logo and nav items */
+
 }
 
 .nav-link {
     margin-left: 0px !important;
-    /* Space between nav items */
+
 }
     .recent-projects-heading {
         font-family: 'Roboto', sans-serif;

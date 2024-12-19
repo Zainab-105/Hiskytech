@@ -68,8 +68,8 @@ include('includes/time_function.php')
             <td><?php echo htmlspecialchars($row['instructor']); ?></td>
             <td><?php echo htmlspecialchars($row['price']); ?></td>
             <td><?php echo htmlspecialchars($row['description']); ?></td>
-            <td>   <a href="add-course-video.php?course_id=<?= $id ?>" class="btn btn-primary">Add Video</a>
-            <a href="view-course-video.php?course_id=<?= $id ?>" class="btn btn-success mt-3">View Videos</a></td>
+            <td>   <a href="add-course-chapters.php?course_id=<?= $id ?>" class="btn btn-primary">Add Chapters</a>
+            <a href="view-chapters.php?course_id=<?= $id ?>" class="btn btn-success mt-3">View Chapters</a></td>
             <td>
                 <a href="delete_course.php?id=<?= $id ?>" class="delete-btn"><i class="fas fa-trash-alt gray-icon"></i></a>
                 <a href="edit_course.php?id=<?= $id ?>" class="edit-btn"><i class="fas fa-edit gray-icon"></i></a>

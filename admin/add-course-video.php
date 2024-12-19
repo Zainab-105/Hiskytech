@@ -7,7 +7,8 @@ $msg = '';
 if (!isset($_GET['course_id']) || empty($_GET['course_id'])) {
     $msg = "<div class='alert alert-danger'>Course ID is missing!</div>";
 } else {
-    $course_id = intval($_GET['course_id']); // Ensure the course ID is an integer
+    $course_id = intval($_GET['course_id']); 
+$chapter_id=intval($_GET['chapter_id']);
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $title = $_POST['title'];
@@ -22,9 +23,9 @@ if (!isset($_GET['course_id']) || empty($_GET['course_id'])) {
         // Move the uploaded video file to the server
         if (move_uploaded_file($_FILES['video']['tmp_name'], $video_file)) {
             // Insert the video record associated with the course ID into the database
-            $query = "INSERT INTO videos (course_id, title, video) VALUES (?, ?, ?)";
+            $query = "INSERT INTO videos (course_id,chapter_id, title, video) VALUES (?, ?, ?,?)";
             $stmt = $conn->prepare($query);
-            $stmt->bind_param("iss", $course_id, $title, $video_file);
+            $stmt->bind_param("iiss", $course_id,$chapter_id, $title, $video_file);
 
             if ($stmt->execute()) {
                 $msg = "<div class='alert alert-success'>Video uploaded successfully! <a href='courses.php'>View Courses</a></div>";

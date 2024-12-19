@@ -71,24 +71,24 @@ include('includes/connection.php')
 <script src="js/script.js"></script> <!-- Your custom JS script -->
 <script>
 $(document).ready(function() {
-    // Handle form submission for both desktop and mobile versions
-    $('#contactForm, .mobile-version .contact-form').on('submit', function(e) {
-        e.preventDefault();  // Prevent default form submission
 
-        var form = $(this);  // Cache the form reference
-        var formData = form.serialize();  // Serialize form data
+    $('#contactForm, .mobile-version .contact-form').on('submit', function(e) {
+        e.preventDefault(); 
+
+        var form = $(this);
+        var formData = form.serialize();  
 
         // Perform AJAX request
         $.ajax({
-            url: 'contact-form-handler.php',  // Path to the PHP handler
+            url: 'contact-form-handler.php',  
             type: 'POST',
             data: formData,
             dataType: 'json',
             success: function(response) {
                 if (response.status == 'success') {
-                    // Show success message inside the form
+               
                     form.find('.response').html('<div class="alert alert-success">' + response.message + '</div>');
-                    form[0].reset();  // Clear form after success
+                    form[0].reset(); 
                 } else {
                     form.find('.response').html('<div class="alert alert-danger">' + response.message + '</div>');
                 }
