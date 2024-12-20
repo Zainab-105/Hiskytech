@@ -1,0 +1,165 @@
+.jobs{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-image: url('../image/career-background.png');
+  background-repeat: no-repeat;
+}
+.job-left{
+    display: flex;
+flex-direction: column;
+}
+.job-left h6{
+    color: #1b1b1b;
+}
+.search-bar{
+    background-color: #F6F7FC;
+    padding: 16px;
+}
+
+  
+  .job-listings {
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 8px;
+
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-bar button {
+    background-color: #FFFFFF;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .job-card {
+    background-color: #E7ECF4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    
+  }
+  
+  .job-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .remote {
+    background-color: #EBF8F9;
+  }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #1b1b1b;
+  }
+  
+  .job-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .job-type {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #ddd;
+    color: #1b1b1b;
+  }
+  
+  .job-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+    flex-wrap: wrap;
+  }
+  
+  .job-info span {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .job-card {
+      padding: 10px;
+    }
+  
+    .job-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .job-header h3 {
+      font-size: 1em;
+    }
+  
+    .job-type {
+      margin-top: 5px;
+    }
+  
+    .job-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .job-info span {
+      margin-bottom: 5px;
+    }
+  
+    .search-bar input {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-bar {
+      flex-direction: column;
+    }
+  
+    .search-bar input,
+    .search-bar button {
+      width: 100%;
+    }
+  
+    .search-bar input {
+      margin-bottom: 10px;
+    }
+  
+    .job-header h3 {
+      font-size: 0.9em;
+    }
+  
+    .job-info {
+      font-size: 0.8em;
+    }
+  }
+  

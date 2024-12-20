@@ -16,13 +16,13 @@
                 <!-- Card 1 -->
                 <?php
         $a = 1;
-        $sql = "SELECT * FROM projects ORDER BY id DESC";
+        $sql = "SELECT * FROM projects ORDER BY id DESC LIMIT 3";
         $query = mysqli_query($conn, $sql);
         if ($query) {
             while ($row = mysqli_fetch_array($query)) {
                 $id = $row['id'];
     ?>
-                <div class="col-md">
+                <div class="col-md-4">
                     <div class="recent-flip-card">
                         <div class="recent-flip-card-inner" id="card1">
                             <div class="recent-flip-card-front recent-project-card">

@@ -17,7 +17,7 @@ if ($result) {
 // Now, $contact_info is available globally
 ?>
 
-<section class="contact-us " style="background-color: #F6F7FC;">
+<section class="contact-us " style="background-color: #F6F7FC; color:#1B1B1E">
         <div class="container">
             <!-- Desktop/Laptop View -->
             <div class="row d-flex justify-content-between align-items-start desktop-version d-none d-sm-none d-md-none d-lg-flex "
@@ -103,6 +103,7 @@ if ($result) {
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 16px;
+      color:#1B1B1E !important;
   ">Contact Us</h3>
                     <p style="
 font-family: Roboto, sans-serif;

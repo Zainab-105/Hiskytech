@@ -2,7 +2,7 @@
 include('includes/head.php');
 
 include('includes/config.php');
-include('includes/time_function.php')
+include('includes/time_function.php');
 ?>
 <body id="page-top">
     <!-- Page Wrapper -->
