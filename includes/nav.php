@@ -20,13 +20,13 @@
           <a class="nav-link" href="#about-us">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Courses</a>
+          <a class="nav-link" href="courses.php">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="projects.php">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#our-team">Carrers</a>
+          <a class="nav-link" href="careers.php">Carrers</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#our-team">Hire Developer</a>
@@ -69,13 +69,13 @@
           <a class="nav-link" href="#about-us">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Courses</a>
+          <a class="nav-link" href="courses.php">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="projects.php">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#our-team">Carrers</a>
+          <a class="nav-link" href="careers.php">Carrers</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#our-team">Hire Developer</a>

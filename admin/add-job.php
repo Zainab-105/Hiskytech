@@ -4,12 +4,6 @@ include('includes/head.php');
 
 $msg = '';
 
-// Debug: Check if form is submitted and print the POST data
-// if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-//     var_dump($_POST);
-//     exit;
-// }
-
 // Handle form submission for inserting a new job
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = $_POST['title'];
@@ -47,9 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="container-fluid">
                 <h1 class="h3 mb-0 text-gray-800">Add New Job</h1>
                 <?php if (!empty($msg)) {
-                        echo $msg;
-                    }
-                ?>
+                    echo $msg;
+                } ?>
                 <form method="POST">
                     <div class="mb-3">
                         <label for="title" class="form-label">Job Title</label>
@@ -89,17 +82,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
 </div>
-<!-- <script>
+<script>
 ClassicEditor.create(document.querySelector('.editor'))
     .then(editor => {
-   
+        const textarea = document.querySelector('textarea[name="content"]');
+
+    
+        textarea.removeAttribute('required');
+
+    
         document.querySelector('form').addEventListener('submit', function() {
-            document.querySelector('textarea[name="content"]').value = editor.getData();
+            textarea.value = editor.getData();
         });
     })
     .catch(error => {
         console.error(error);
     });
+</script>
 
-</script> -->
 <?php include('includes/footer.php') ?>
