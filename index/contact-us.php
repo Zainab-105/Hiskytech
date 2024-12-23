@@ -26,10 +26,10 @@ if ($result) {
                 <!-- First Column: Text Section -->
                 <div class="col-md-6 contact-info">
                     <h3 class="contact-title">Contact Us</h3>
-                    <p class="contact-description pt-2" style="display: inline;">
+                    <p class="contact-description pt-2" style="display: inline;color:#666;">
                         Email, call, or complete the form to learn <br> how
                     <h5 style="display: inline;"><span class="color-hi-tech">Hi</span><span
-                            class="color-sky">Sky</span><span class="color-hi-tech">Tech</span></h5> can elevate.
+                            class="color-sky">Sky</span><span class="color-hi-tech">Tech</span></h5> <p style="color:#666;display: inline;">can elevate.</p>
                     </p>
               <p class="contact-email pt-2">
     <a href="mailto:<?=$contact_info['email']?>" style="color: #666;"><?=$contact_info['email']?></a>
@@ -112,6 +112,7 @@ font-weight: 400;
 line-height: 24px;
 margin-top: 8px;
 width: 289px;
+color:#666;
 ">
                         Email, call, or complete the form to learn how
                         <span style="
@@ -121,9 +122,9 @@ width: 289px;
     display: inline;
     margin: 0;
 ">
-                            <span style="color: rgb(101, 131, 185);">Hi</span>
+                            <span style="color: #0056b3">Hi</span>
                             <span style="color: rgb(55, 182, 191);">Sky</span>
-                            <span style="color: rgb(101, 131, 185);">Tech</span>
+                            <span style="color: #0056b3">Tech</span>
                         </span>
                         can elevate.
                     </p>

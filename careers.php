@@ -28,24 +28,24 @@ include('includes/connection.php')
     <!-- main section -->
     <section class="careers-main">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="main-left">
-                        <h4 style="display: inline-block;">Achieve Your Professional Goals with
-                            <span class="color-hi-tech">Hi</span><span class="color-sky">Sky</span><span
-                                class="color-hi-tech">Tech</span>.
-                        </h4>
-                        <p>Value-based upscaling is at the heart of HiSkyTech work environment. From learning to
-                            implementation, our developers and tech experts stay ahead in their professional game.</p>
-                        <a href="jobs.php" class="main-left-btn">Careers Opportunities</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="main-right">
-                        <img src="image/career-left.png" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="row align-items-center">
+  <div class="col-md-6 order-1 order-md-2">
+    <div class="main-right d-flex justify-content-end">
+      <img src="image/carrer.png" alt="Career Image">
+    </div>
+  </div>
+  <div class="col-md-6 order-2 order-md-1">
+    <div class="main-left">
+      <h4 style="display: inline-block;">Achieve Your Professional Goals with
+        <span class="color-hi-tech">Hi</span><span class="color-sky">Sky</span><span class="color-hi-tech">Tech</span>.
+      </h4>
+      <p>Value-based upscaling is at the heart of HiSkyTech work environment. From learning to
+        implementation, our developers and tech experts stay ahead in their professional game.</p>
+      <a href="jobs.php" class="main-left-btn">Careers Opportunities</a>
+    </div>
+  </div>
+</div>
+
         </div>
     </section>
     <!-- how it work section -->
@@ -141,7 +141,7 @@ include('includes/connection.php')
         </div>
     </section>
     <?php include('includes/footer.php') ?>
-
+    <?php include('signup-login.php');?>     
 
 
     <!-- jQuery 3.x Slim Version CDN -->

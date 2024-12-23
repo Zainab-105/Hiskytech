@@ -21,7 +21,7 @@ include('includes/connection.php')
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <?php include('includes/nav.php') ?>
 
 
@@ -60,7 +60,7 @@ include('includes/connection.php')
     <?php include('index/feedback-section.php') ?>
 
     <?php include('includes/footer.php') ?>
-
+    <?php include('signup-login.php');?>     
 
 
     <!-- jQuery 3.x Slim Version CDN -->

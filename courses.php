@@ -56,7 +56,7 @@ $query=mysqli_query($conn,$sql);
 while($row=mysqli_fetch_assoc($query)){ ?>
 
 <div class="col-md-3"> <!-- Card 1 -->
-<a href="course-details.php?id=<?=$row['id']?>" class="cards-anchor">
+<a href="availablesoon.php?id=<?=$row['id']?>" class="cards-anchor">
                 <div class="cards">
                     <div> <img src="admin/<?=$row['thumbnail']?>" alt=""></div>
 
@@ -104,7 +104,7 @@ $query=mysqli_query($conn,$sql);
 while($row=mysqli_fetch_assoc($query)){ ?>
 
 <div class="col-md-3"> <!-- Card 1 -->
-<a href="course-details.php?id=<?=$row['id']?>" class="cards-anchor">
+<a href="availablesoon.php?id=<?=$row['id']?>" class="cards-anchor">
                 <div class="cards">
                     <div> <img src="admin/<?=$row['thumbnail']?>" alt=""></div>
 
@@ -146,6 +146,7 @@ while($row=mysqli_fetch_assoc($query)){ ?>
     </div>
     <?php include('index/feedback-section.php'); ?>
     <?php include('includes/footer.php'); ?>
+    <?php include('signup-login.php');?>     
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

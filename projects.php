@@ -17,8 +17,7 @@ include('includes/connection.php')
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet">
+
 </head>
 
 
@@ -51,7 +50,7 @@ include('includes/connection.php')
             while ($row = mysqli_fetch_array($query)) {
                 $id = $row['id'];
     ?>
-                <div class="col-md-4 mb-6">
+                <div class="col-md-4 mb-5">
                     <div class="recent-flip-card">
                         <div class="recent-flip-card-inner" id="card1">
                             <div class="recent-flip-card-front recent-project-card">
@@ -80,7 +79,7 @@ include('includes/connection.php')
                                     <div class="backbuttons">
                                         <a href="#" class="btn-light-gray mt-3 text-center"
                                             style="border-radius: 50px; display: block; line-height: 38px; "><?php echo $row['field']; ?></a>
-                                        <a href="#" class=" btn-blue mt-3 text-center"
+                                        <a href="projectdetail.php?id=<?=$row['id']?>" class=" btn-blue mt-3 text-center"
                                             style="border-radius: 50px; display: block; line-height: 38px;">View Project Details</a>
                                     </div>
 
@@ -129,7 +128,7 @@ include('includes/connection.php')
 
     <?php include('includes/footer.php') ?>
 
-
+    <?php include('signup-login.php');?>     
 
     <!-- jQuery 3.x Slim Version CDN -->
 

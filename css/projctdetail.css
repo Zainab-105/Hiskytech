@@ -8,10 +8,27 @@
  
 #container1{
     background-color: #F6F7FC;
-    background-image: url(image/projectbg1.png);
+    position: relative;
+  
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+#container1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-image: url('../image/projectbg1.png');
+ opacity: 0.1;
+}
+.sec1{
+  /* position: relative; */
+  z-index: 2;
 }
 #container1 .sec1{
     margin-left: 144px;
@@ -20,12 +37,15 @@
     width: 50%;
 }
 .sec2{
-  padding-top: 30px;
+  padding-top: 80px;
   width: 50%;
+ display: flex;
+ justify-content: center;
 } 
 .sec2 img{
-width: auto;
+width: 80%;
 height: 490px;
+object-fit: cover;
 /* top: 200px;
 left: 747px; */
 
@@ -33,26 +53,33 @@ left: 747px; */
 }
 @media screen and (max-width: 900px) { /* Mobile Phones */
     #container1 {
-      flex-direction: column;
+      flex-direction: column-reverse;
       width: 100%;
 
     }
     #container1 .sec1{
 
-        padding-top: 150px;
+      padding-top: 30px;
         text-align: center;
         padding-bottom: 10px;
-        width: 92%;
-        margin-left: 16px;
-        margin-right: 16px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .sec2{
-      padding-top: 0px;
-      align-items: center;}
+      width: 100%;
+      padding-top: 80px;
+      
+      align-items: center;
+      display: flex;
+    }
+
   
   .sec2 img{
     padding-top: 0px;
-    width: 600px
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
   }
   #container2, #container3, .container4{
     margin-left: 1%;
@@ -62,20 +89,23 @@ left: 747px; */
 }
 
 .sec4{
+  width: 100%;
   flex-direction: column;
   margin-bottom: 100px;
   justify-content: center;
 }
 .sec4 img{
-  width: 100%;
+  width: 90% !important;
   justify-content: center;
+  object-fit: cover;
   margin-left: 10%;
   margin-right: 10%;
 
 }
 .sec5 img{
-  width: 100%;
+  width: 90% !important;
   justify-content: center;
+  object-fit: cover;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -230,8 +260,7 @@ transition: transform 0.4s ease;
 #container3{
     margin-top: 80px ;
     margin-bottom: 80px ;
-    margin-left: 10%;
-    margin-right: 10%;
+   
     text-align: center;
     justify-content: center;
     
@@ -297,17 +326,14 @@ transition: transform 0.4s ease;
     margin-top: 10px;
     transition: color 0.3s ease;
 }
-.container4{
-  margin-left: 10%;
-  margin-right: 10%;
-}
+
 .container4 h1{
   text-align: start;
   margin-bottom: 50px;
 }
 .sec4, .sec5{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 100px;
     text-align: start;
 
@@ -321,7 +347,8 @@ transition: transform 0.4s ease;
     height: 450px;
 }
  .sec5 .app1{
-     margin-right: 3%; 
+     margin-right: auto; 
+     margin-left: auto;
     margin-top: 15%;
 
 }

@@ -168,3 +168,28 @@ text-align: center;
 color: #666666;
 padding: 12px;
 }
+@media screen and (max-width:900px) {
+    .careers-main{
+        padding-bottom: 0px;
+    }
+    .main-right{
+  
+      padding-bottom: 0px;
+      padding-top: 30px;
+    }
+    .main-right img{
+        width: 90%;
+    }
+    .main-left{
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+      }
+      .how-work{
+        padding-bottom: 0px;
+      }
+      .why-work{
+        padding-bottom: 0px;
+      }
+}

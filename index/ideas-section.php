@@ -1,4 +1,4 @@
-<section class="ideas">
+<section class="ideas" id="about-us">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 idea-heading">
@@ -8,7 +8,7 @@
                     </h4>
 
                 </div>
-                <div class="col-md-7 idea-p">
+                <div class="col-md-7 idea-p" style="color:#666;">
                     <p>At HiSkyTech, we specialize in UI/UX design, mobile app development, and graphic
                         design services. Our mission is to create seamless digital experiences tailored to
                         your needs. Watch this video to learn how we transform ideas into reality with our

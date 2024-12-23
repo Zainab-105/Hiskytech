@@ -430,6 +430,7 @@ while($row=mysqli_fetch_assoc($query)){
     </section>
     <?php include('index/faq-section.php') ?>
     <?php include('includes/footer.php') ?>
+    <?php include('signup-login.php');?>     
     <!-- jQuery 3.x Slim Version CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

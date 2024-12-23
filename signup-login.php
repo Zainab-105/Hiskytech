@@ -1,74 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Verification</title>
+    <title>SignUp-Login</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/signup-login.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <section class="section-A">
-        <div class="container">
-            <div class="row align-items-center box2">
-                <!-- First Column: Logo -->
-                <div class="col-md-3 text-start">
-                    <a href="index.html">
-                        <img src="image/HiSkyTech Png_LOGO-Horizantal-02 4.png" alt="Logo" class="img-fluid" style="max-height: 80px;">
-                    </a>
-                </div>
-
-                <!-- Second Column: Navigation Bar -->
-                <div class="col-md-6">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <ul class="navbar-nav" style="font-size: 16px;">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about-us">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#services">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#projects">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#our-team">Our Team</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-
-                <!-- Third Column: SignUp/Login Button with unique ID -->
-                <div class="col-md-3 text-center contact">
-                    <a href="#contact" class="openModalBtn mt-3" style="background-color: rgb(10,58,143); height: 44px; width: 158px; border-radius: 8px;">
-                        SignUp or Login
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   
-    
-    
-    <!-- Additional Sections -->
-    <section class="section-B">
-        <div class="verification-container">
-            <h2>Email Verification</h2>
-            <p>Your account has been verified!<br> <br>Now you can login.</p>
-            <button class="btn-login" id="registerModalBtn">Login</button>
-
-        </div>
-    </section>
-    <!-- login modal -->
-    <div id="loginModal" class="modal" style="display: none;">
+     <!-- login modal -->
+ <div id="loginModal" class="modal" style="display: none;">
         <div class="modal-content model-body ">
             <span class="close">&times;</span>
             <img src="image/signup-img1.png" alt="">
@@ -155,103 +99,7 @@
       
         </div>
     </div>
-    <section class="footer">
-        <div class="container d-flex justify-content-center align-items-center" style="padding: 50px 0;">
-            <div class="row w-100"> <!-- Added w-100 for full row width -->
-                <!-- First col-md-6 -->
-                <div class="col-md-5 d-flex justify-content-center align-items-start">
-                    <div class="card custom-card">
-                        <!-- Card Image -->
-                        <img src="image/footer logo.png" alt="" class="card-img">
-                        <hr class="mt-4" style="width: 90%; margin: auto;border: 1px solid #E4E4E4">
-                        <!-- Font Awesome and Paragraph -->
-                        <div class="card-content">
-                            <i class="fas fa-star custom-icon"></i>
-                            <p class="custom-text" style="color: black;">5 Star Reviews</p>
-                        </div>
-
-                        <!-- Row of Circular Images (50x50) -->
-                        <div class="image-row d-flex justify-content-center mt-3">
-                            <img src="image/Ellipse 1.png" alt="" class="rounded-circle img-small">
-                            <img src="image/Ellipse 2.png" alt="" class="rounded-circle img-small">
-                            <img src="image/Ellipse 3.png" alt="" class="rounded-circle img-small">
-                            <img src="image/Ellipse 4.png" alt="" class="rounded-circle img-small">
-                            <img src="image/Ellipse 5.png" alt="" class="rounded-circle img-small">
-                        </div>
-                        <hr class="mt-4" style="width: 90%; margin: auto;border: 1px solid #E4E4E4">
-
-                        <p class="custom-paragraph">Our Socials</p>
-                        <div class="icon-row d-flex justify-content-center mt-3">
-                            <a href="https://www.linkedin.com/company/hiskytech/" target="_blank">
-                                <i class="fab fa-linkedin-in custom-icon-large"></i>
-</i>
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=61554879965194&mibextid=ZbWKwL" target="_blank">
-                                <i class="fab fa-facebook-f custom-icon-large"></i>
-</i>
-                            </a>
-                            <a href="https://www.instagram.com/hisky_tech?igsh=MTl2MGtxdXV5ejd5bg==" target="_blank">
-                                <i class="fab fa-instagram custom-icon-large"></i>
-
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Second col-md-6 -->
-                <div class="col-md-7 align-items-start">
-                    <div class="row">
-                        <!-- First col-md-4 -->
-                        <div class="col-md-4 services-column">
-                            <h5>Services</h5>
-                            <a href="#">Web Development</a><br>
-                            <a href="#">Mobile App Development</a><br>
-                            <a href="#">UI UX Design</a><br>
-                            <a href="#">Graphic Design</a><br>
-                            <a href="#">Product Development</a><br>
-                            <a href="#">AI Development</a><br>
-                        </div>
-
-                        <!-- Second col-md-4 -->
-                        <div class="col-md-4 services-column">
-                            <h5>Hire</h5>
-                            <a href="#">Elixir Developer</a><br>
-                            <a href="#">Python Developer</a><br>
-                            <a href="#">React JS Developer</a><br>
-                            <a href="#">SaaS JS Developer</a><br>
-                            <a href="#">Node JS Developer</a><br>
-                        </div>
-
-                        <!-- Third col-md-4 -->
-                        <div class="col-md-4 services-column">
-                            <h5>Company</h5>
-                            <a href="#">About Us</a><br>
-                            <a href="#">Portfolio</a><br>
-                            <a href="#">Blog</a><br>
-                            <a href="#">Careers</a><br>
-                            <a href="#">Pricing</a><br>
-                            <a href="#">Contact Us</a><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="site-footer">
-            <div class="footer-section-left">
-
-                <p class="footer-copyright"> <img src="image/copyright.png" alt="img"> All Rights Reserved By HiSkyTech
-                </p>
-            </div>
-            <div class="footer-section-right">
-                <a href="#" class="footer-policy">Privacy Policy</a>
-                <span>|</span>
-                <a href="#" class="footer-terms">Terms & Conditions</a>
-            </div>
-        </footer>
-    </section>
-
- <script>
+    <script>
     document.addEventListener("DOMContentLoaded", () => {
     const loginModal = document.getElementById("loginModal");
     const openModalBtns = document.getElementsByClassName("openModalBtn"); 
@@ -364,10 +212,8 @@
 });
 
  </script>
-        
-
-    <!-- Optional Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <!-- Optional Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

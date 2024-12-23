@@ -32,7 +32,7 @@
           <a class="nav-link" href="#our-team">Hire Developer</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#our-team">Our Team</a>
+          <a class="nav-link" href="#team">Our Team</a>
         </li>
        
       </ul>
@@ -42,7 +42,7 @@
 
             <!-- Third Column: Contact Us Button -->
             <div class="col-md-2 text-center contact">
-                <a href="#contact" class="mt-3"
+                <a href="#contact" class="openModalBtn mt-3"
                     style="background-color: rgb(10,58,143); height: 44px; width: 158px; border-radius: 8px;">
                     SignUp or Login
                 </a>

@@ -6,14 +6,14 @@
         </div>
         <div class="text-container">
             <h2>Achievements</h2>
-            <p style="display: inline;">
-                At
+            <p style="display: inline;color:#666;">
+                At</p>
             <h5 style="display: inline;"><span class="color-hi-tech">Hi</span><span class="color-sky">Sky</span><span
-                    class="color-hi-tech">Tech</span></h5>, we take pride in our journey, marked by significant
+                    class="color-hi-tech">Tech</span></h5><p style="display: inline;color:#666;">, we take pride in our journey, marked by significant
             milestones
             and achievements. Our commitment to excellence has propelled us to deliver innovative IT solutions that
-            empower businesses.
-            </p>
+            empower businesses.</p>
+            
             <div class="stats">
                 <div class="stat-item">
                     <h3>75%</h3>
@@ -66,7 +66,7 @@
                     color: #666666;
                     text-align: left;
                     letter-spacing: 0.38px; display: inline;">
-                        At
+                        At</p>
                     <h5 class="company-name" style="
                         display: inline;
                         font-family: 'Roboto', sans-serif;
@@ -77,10 +77,10 @@
                         letter-spacing: 0.38px;">
                         <span class="color-hi-tech">Hi</span><span class="color-sky">Sky</span><span
                             class="color-hi-tech">Tech</span>
-                    </h5>, we take pride in our journey marked by significant milestones and achievements. Our
+                    </h5><p style="display: inline;color:#666;">, we take pride in our journey marked by significant milestones and achievements. Our
                     commitment to excellence has propelled us to deliver innovative IT solutions that empower
-                    businesses.
-                    </p>
+                    businesses.</p>
+                    
                     <!-- Stats Section -->
                     <div class="stats" style="display: flex; flex-direction: column; width: 296px; gap: 24px;">
                         <div class="stat-item" style="width: 296px; height: 90px; margin-bottom: 16px;">
