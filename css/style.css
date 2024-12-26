@@ -1435,9 +1435,11 @@ text-align: center;
     line-height: 33.6px;
   
 }
-
+.services-column a{
+    color: white;
+}
 .row div a {
-    color: #FFFFFF;
+    
     text-decoration: none;
     font-weight: 400 !important;
     text-decoration: none;

@@ -80,6 +80,13 @@
         <span>Courses</span>
     </a>
 </li>
+<li class="nav-item">
+    <a class="nav-link" href="developers.php">
+    <i class="fa-solid fa-laptop"></i>
+
+        <span>Developers</span>
+    </a>
+</li>
  
  
 

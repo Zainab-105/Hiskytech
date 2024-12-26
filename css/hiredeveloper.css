@@ -4,11 +4,36 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+.hiring-heading{
+width: 593px;
+}
+.hiring-heading p{
+color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 
- 
+  
+}
+ .hiring-heading h2{
+ color: #1B1B1E;
+font-size: 32px;
+font-weight: 700;
+line-height: 41.6px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+ }
+ .ready{
+  background-color: #fff !important;
+  background-image: url('../image/career-background.png');
+  background-repeat: no-repeat;
+ }
 #container1{
-    background-color: #F6F7FC;
-    background-image: url(image/projectbg1.png);
+   background-color: #F6F7FC;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -97,8 +122,8 @@ width: 600px
 }
 #container3 p, #container3 h1 ,#container7 p, #container7 h1{
   margin-bottom: 0%;
-  margin-left: 3% !important;
-  margin-right: 3% !important;
+  /* margin-left: 3% !important;
+  margin-right: 3% !important; */
 
 }
 #container3 h1{
@@ -214,7 +239,7 @@ width: 600px
   }
   #container3 p, #container3 h1{
     margin-bottom: 0%;
-    margin-left: 10%;
+    margin-left: 0%;
     margin-right: 10%;
   }
   #container3 h1{
@@ -231,7 +256,7 @@ width: 600px
   }
   #container7 p, #container7 h1{
     margin-bottom: 0%;
-    margin-left: 10%;
+    margin-left: 0%;
     margin-right: 10%;
   }
   #container7 h1{

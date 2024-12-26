@@ -13,37 +13,57 @@
 
             <!-- Second Column: Navigation Bar -->
             <div class="col-md-8">
-                <nav class=" navbar-expand-lg " style="background-color:transparent !important">
-                    <div class="navbar-collapse justify-content-center">
-                    <ul class="navbar-nav" >
-        <li class="nav-item">
-          <a class="nav-link" href="#about-us">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="courses.php">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.php">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="careers.php">Carrers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#our-team">Hire Developer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#team">Our Team</a>
-        </li>
-       
-      </ul>
-                    </div>
-                </nav>
-            </div>
+    <nav class="navbar-expand-lg" style="background-color: transparent !important">
+        <div class="navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.php">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.php">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="careers.php">Careers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="hireDeveloperDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hire Developer
+                    </a>
+                 
+                    <ul class="dropdown-menu" aria-labelledby="hireDeveloperDropdown">
+    <?php
+    $sql = "SELECT id, name FROM developers";
+    $query = mysqli_query($conn, $sql);
+    
+    if(mysqli_num_rows($query) > 0) {
+        while($row = mysqli_fetch_assoc($query)){
+    ?>
+            <li><a class="dropdown-item" href="hiredeveloper.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></li>
+    <?php
+        }
+    } else {
+        echo "<li>No developers available</li>";
+    }
+    ?>
+</ul>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#our-team">Our Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
 
             <!-- Third Column: Contact Us Button -->
             <div class="col-md-2 text-center contact">
                 <a href="#contact" class="openModalBtn mt-3"
-                    style="background-color: rgb(10,58,143); height: 44px; width: 158px; border-radius: 8px;">
+                    style="background-color: rgb(10,58,143); height: 44px; width: 158px; border-radius: 8px;color:white;">
                     SignUp or Login
                 </a>
             </div>
@@ -64,29 +84,48 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#about-us">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="courses.php">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.php">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="careers.php">Carrers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#our-team">Hire Developer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#our-team">Our Team</a>
-        </li>
-        <li class="nav-item text-center contact">
-          <a href="#contact" class="mt-3" style="background-color: rgb(10,58,143); padding:13px 0px;width: 300px; border-radius:100px; color:white;font-size: 18px;">SignUp or Login</a>
-        </li>
-      </ul>
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="#about-us">About Us</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="courses.php">Courses</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="projects.php">Projects</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="careers.php">Careers</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="hireDeveloperDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Hire Developer
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="hireDeveloperDropdown">
+            <?php
+            $sql = "SELECT id, name FROM developers";
+            $query = mysqli_query($conn, $sql);
+            
+            if (mysqli_num_rows($query) > 0) {
+                while ($row = mysqli_fetch_assoc($query)) {
+            ?>
+                <li><a class="dropdown-item" href="hiredeveloper.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></li>
+            <?php
+                }
+            } else {
+                echo "<li class='dropdown-item'>No developers available</li>";
+            }
+            ?>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#our-team">Our Team</a>
+    </li>
+    <li class="nav-item text-center contact">
+        <a href="#contact" class="mt-3" style="background-color: rgb(10,58,143); padding:13px 0px;width: 300px; border-radius:100px; color:white;font-size: 18px;">SignUp or Login</a>
+    </li>
+</ul>
+
    
   </div>
 </nav>
