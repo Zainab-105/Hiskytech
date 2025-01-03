@@ -88,57 +88,56 @@ $id=$_GET['id'];
                     </div>
 
                     <!-- Application Section -->
-                    <div class="tab-content application-section" id="application">
-                        <h2>Personal Information</h2>
-                        <div class="row form-group">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="First name">
+                    <form id="applicationForm" enctype="multipart/form-data">
+  <div class="tab-content application-section" id="application">
+    <h2>Personal Information</h2>
+    <div class="row form-group">
+    <input type="text" name="job_id" class="form-control" placeholder="id" hidden value="<?php echo $row['id']?>" >
+      <div class="col">
+        <input type="text" name="first_name" class="form-control" placeholder="First name" >
+      </div>
+      <div class="col">
+        <input type="text" name="last_name" class="form-control" placeholder="Last name">
+      </div>
     </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
+    <div class="form-group">
+      <input type="email" name="email" id="email" placeholder="Email">
     </div>
+    <div class="form-group">
+      <input type="text" name="headline" id="headline" placeholder="Headline (optional)">
+    </div>
+    <div class="form-group">
+      <input type="tel" name="phone_number" id="phone-number" placeholder="Phone number">
+      <small>With this number we will contact you.</small>
+    </div>
+    <div class="form-group">
+      <input type="text" name="address" id="address" placeholder="Address">
+      <small>Include your city, region, and country, so that employers can easily manage your application.</small>
+    </div>
+    <div class="upload-photo">
+      <div class="upload-area">
+        <label for="photoInput">
+          <img id="icon" src="image/upload.png">
+        </label>
+        <input id="photoInput" type="file" name="photo" accept="image/*" >
+        <p><span class="upload-span">Upload a Photo</span> or drag and drop here</p>
+      </div>
+    </div>
+    <h2>Profile</h2>
+    <div class="form-group d-flex justify-content-between">
+      <label for="education" style="color:black;">Education (optional)</label>
+      <div>
+        <label for="educationFile" class="add-btn" style="color:#0A3A8F;">+ Add</label>
+        <input type="file" id="educationFile" name="education_file" accept=".pdf,.doc,.docx">
+      </div>
+    </div>
+    <button type="submit" class="btn" style="color:white;background-color:#0a3a8f;">Submit</button>
   </div>
-                        <div class="form-group">
-               
-                            <input type="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                    
-                            <input type="text" id="headline" placeholder="Headline (optional)">
-                        </div>
-                        <div class="form-group">
-                    
-                            <input type="tel" id="phone-number" placeholder="Phone number">
-                            <small>With this number we will contact you.</small>
-                        </div>
-                        <div class="form-group">
-                         
-                            <input type="text" id="address" placeholder="Address">
-                            <small>Include your city, region, and country, so that employers can easily manage your
-                                application.</small>
-                        </div>
-                        <div class="upload-photo">
-                            <div class="upload-area">
-                            <label for="fileInput"> 
-  <img id="icon" src="image/upload.png">
-</label>
-<input id="fileInput" type="file">
-                                
+</form>
 
-                                <p>
-                                    <span class="upload-span">Upload a Photo</span> or drag and drop here</p>
-                            </div>
-                        </div>
-                        <h2>Profile</h2>
-                        <div class="form-group d-flex justify-content-between">
-                            <label for="education" style="color:black;">Education (optional)</label>
-                            <div>
-                            <label for="add-btn" class="add-btn" style="color:#0A3A8F;">+ Add</label>
-                            <input type="file" id="add-btn">
-                            </div>
-                            
-                        </div>
-                    </div>
+<div id="responseMessage"></div>
+
+
                 </div>
             </div>
 
@@ -349,6 +348,37 @@ $id=$_GET['id'];
 
 
     </script>
+
+<script>
+  $(document).ready(function () {
+    $('#applicationForm').on('submit', function (e) {
+      e.preventDefault();
+
+
+      $('#responseMessage').html('');
+
+// Prepare form data
+let formData = new FormData(this);
+
+      $.ajax({
+        url: 'submit_application.php', // Backend script URL
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        beforeSend: function () {
+          $('#responseMessage').html('Submitting...');
+        },
+        success: function (response) {
+          $('#responseMessage').html('<p >' + response + '</p>');
+        },
+        error: function (xhr, status, error) {
+          $('#responseMessage').html('<p >Error: ' + error + '</p>');
+        },
+      });
+    });
+  });
+</script>
 
 </body>
 

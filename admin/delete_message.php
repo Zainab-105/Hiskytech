@@ -1,7 +1,8 @@
 <?php
 include('includes/connection.php');
 if (isset($_GET['id'])) {
-    $id = intval($_GET['id']);
+   $id=$_GET['id'];
+   echo $id;
     $query = "DELETE FROM messages WHERE id = $id";
     if (mysqli_query($conn, $query)) {
         header("Location: messages.php"); 

@@ -1,4 +1,4 @@
-<section class="field-back-section">
+<section class="field-back-section ">
         <div class="container-fluid">
             <div class="service-heading">
                 <div>

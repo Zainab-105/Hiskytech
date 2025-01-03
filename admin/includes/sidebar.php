@@ -87,6 +87,13 @@
         <span>Developers</span>
     </a>
 </li>
+<li class="nav-item">
+    <a class="nav-link" href="job-applications.php">
+    <i class="fa-solid fa-laptop"></i>
+
+        <span>Job Applications</span>
+    </a>
+</li>
  
  
 

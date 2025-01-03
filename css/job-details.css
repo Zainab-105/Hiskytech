@@ -23,6 +23,11 @@ color: #666666;
 border-radius: 8px ;
 border: none;
 }
+.is-invalid {
+    border: 1px solid red;
+    background-color: #fdd;
+  }
+  
 .btn-container{
  
     display: flex;
@@ -217,10 +222,10 @@ list-style-type: disc;
     background-color: #0A3A8F;
     color: white !important;
 }
-#fileInput{
+#photoInput{
     display: none;
   }
-  #add-btn{
+  #educationFile{
     display: none;
   }
   #icon{

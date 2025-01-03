@@ -109,7 +109,7 @@
             if (mysqli_num_rows($query) > 0) {
                 while ($row = mysqli_fetch_assoc($query)) {
             ?>
-                <li><a class="dropdown-item" href="hiredeveloper.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></li>
+                <li><a class="dropdown-item" href="hiredeveloper.php?id=<?php echo $row['id']; ?>" style="color:#666;"><?php echo $row['name']; ?></a></li>
             <?php
                 }
             } else {

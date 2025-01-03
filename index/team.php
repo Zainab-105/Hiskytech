@@ -22,7 +22,7 @@ if ($query) {
 }
 ?>
 
-<section class="team" id="team">
+<section class="team " id="team">
     <div class="container">
         <div class="service-heading">
             <div>

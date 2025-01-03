@@ -38,7 +38,45 @@ text-align: left !important;
     height: 400px;
 
 }
+.stat {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
+.stat.visible {
+    opacity: 1;
+}
+
+.slide-left {
+    animation: slideLeftAnimation both;
+    animation-timeline: view();
+  }
+  
+  @keyframes slideLeftAnimation {
+    0% {
+      transform: translateX(1000px);
+    }
+  
+    50% {
+      transform: translateX(0px);
+    }
+  }
+  
+  .slide-right {
+    animation: slideRightAnimation both;
+    animation-timeline: view();
+  }
+  
+  @keyframes slideRightAnimation {
+    0% {
+      transform: translateX(-1000px);
+    }
+  
+    50% {
+      transform: translateX(0px);
+    }
+  }
+  
 .central-icon {
     width: 80px;
 
@@ -2518,7 +2556,12 @@ line-height: 20.4px;
     border-radius: 10px;
     transition: box-shadow 0.3s ease;
 }
-
+.box2{
+    padding-top: 100px;
+}
+.box1 h2{
+    padding-top: 25px;
+}
 .service-card1-mobile {
     background: linear-gradient(120deg, #0A3A8F, #37B6BF);
     padding: 20px;

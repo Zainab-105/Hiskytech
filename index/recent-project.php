@@ -1,5 +1,5 @@
 
-<section class="recent-projects-section">
+<section class="recent-projects-section slide-right">
         <!-- Section Heading -->
         <div class="service-heading">
                 <div>

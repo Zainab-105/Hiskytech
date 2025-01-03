@@ -231,6 +231,25 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(tagContainer);
 });
 
+// Select all elements with the 'reveal' class
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const revealPoint = 150; // Adjust for when the element should be revealed
+
+    if (elementTop < windowHeight - revealPoint) {
+      element.classList.add('active');
+    } else {
+      element.classList.remove('active');
+    }
+  });
+}
+
+// Add event listener for scroll
+window.addEventListener('scroll', revealOnScroll);
 
 </script>
 

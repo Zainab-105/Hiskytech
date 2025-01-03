@@ -17,7 +17,7 @@ if ($result) {
 // Now, $contact_info is available globally
 ?>
 
-<section class="contact-us " style="background-color: #F6F7FC; color:#1B1B1E">
+<section class="contact-us  " style="background-color: #F6F7FC; color:#1B1B1E">
         <div class="container">
             <!-- Desktop/Laptop View -->
             <div class="row d-flex justify-content-between align-items-start desktop-version d-none d-sm-none d-md-none d-lg-flex "

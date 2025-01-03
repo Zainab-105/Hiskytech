@@ -1,6 +1,7 @@
 
 
-<section class="achievements-section desktop-version">
+<section class="achievements-section desktop-version ">
+
         <div class="image-container">
             <img src="image/Frame 116.png" alt="HiSkyTech Logo">
         </div>
@@ -14,22 +15,23 @@
             and achievements. Our commitment to excellence has propelled us to deliver innovative IT solutions that
             empower businesses.</p>
             
-            <div class="stats">
-                <div class="stat-item">
-                    <h3>75%</h3>
-                    <p>Client satisfaction rate based on feedback surveys.</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>On-time project delivery across all our services.</p>
-                </div>
-            </div>
+      <div class="stats">
+    <div class="stat-item">
+        <h3 data-target="75" style="display:inline;">0</h3><h2 style="display:inline;">%</h2>
+        <p>Client satisfaction rate based on feedback surveys.</p>
+    </div>
+    <div class="stat-item">
+        <h3 data-target="100" style="display:inline;">0%</h3><h2 style="display:inline;">%</h2>
+        <p>On-time project delivery across all our services.</p>
+    </div>
+</div>
+
         </div>
     </section>
 
     <!-- Mobile Version -->
     <!-- Mobile Version -->
-    <section class="achievements-section mobile-version" style="display: none; padding: 26px;">
+    <section class="achievements-section mobile-version slide-left" style="display: none; padding: 26px;">
         <div class="container" style="display: flex; flex-direction: column;">
             <div class="row" style="display: flex; flex-wrap: wrap;">
                 <!-- First Column: Image -->
@@ -90,7 +92,7 @@
                             font-weight: 700;
                             line-height: 33.6px;
                             text-align: left;
-                            color: #1B1B1E;">75%</h3>
+                            color: #1B1B1E;" data-target="75">75%</h3>
                             <p class="stat-description" style="
                             font-family: 'Roboto', sans-serif;
                             font-size: 16px;
@@ -106,7 +108,7 @@
                             font-weight: 700;
                             line-height: 33.6px;
                             text-align: left;
-                            color: #1B1B1E;">100%</h3>
+                            color: #1B1B1E;" data-target="100">100%</h3>
                             <p class="stat-description" style="
                             font-family: 'Roboto', sans-serif;
                             font-size: 16px;

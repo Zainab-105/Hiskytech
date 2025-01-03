@@ -115,9 +115,10 @@ foreach ($benefit_headings as $index => $heading) {
 }
 
 // Split the concatenated service data into arrays
-$service_icons = explode(',', $row['service_icons']);
-$service_headings = explode(',', $row['service_headings']);
-$service_descriptions = explode(',', $row['service_descriptions']);
+$service_icons = isset($row['service_icons']) ? explode(',', $row['service_icons']) : [];
+$service_headings = isset($row['service_headings']) ? explode(',', $row['service_headings']) : [];
+$service_descriptions = isset($row['service_descriptions']) ? explode(',', $row['service_descriptions']) : [];
+
 foreach ($service_headings as $index => $heading) {
     // Check if the index exists in each array (icon, heading, description)
     $icon = isset($service_icons[$index]) ? $service_icons[$index] : '';

@@ -1,7 +1,20 @@
     <!-- Mobile Version -->
-    <section class="section-B mobile-version" style="display: none; height: 849px">
+    <section class="section-B mobile-version " style="display: none; height: 849px">
         <div class="container">
             <div class="row flex-column align-items-center text-center">
+                     <!-- Second Div -->
+                     <div class="col-12 d-flex flex-column align-items-center box2">
+                        <img src="image/Group 7.png" alt="Group Illustration" class="mb-3"
+                            style="width: 314px; height: 272px; margin-top: 24px ;">
+                        <!-- <div class="trusted-text  box1"
+                            style="width: 269px; height: 58px;   text-align: center; margin-top: 32px;">
+                            <img src="image/avtar.png" alt="Trusted Icon" style="width: 64px; height: 32px; ;">
+                            <p
+                                style="font-family: 'Roboto', sans-serif; font-size: 13px; font-weight: 400; line-height: 18.2px; letter-spacing: 0.38px; text-align: left; color: #1B1B1E; padding-top: 8px;">
+                                Trusted by 1000+ people around the world.
+                            </p>
+                        </div> -->
+                    </div>
                 <!-- First Div -->
                 <div class="col-12 box1" style="width: 276px;  ">
                     <h2
@@ -25,23 +38,11 @@
                     </div>
                     <div class="col-md-3 text-center contact">
                         <a href="https://wa.me/923186362759" target="_blank" class="mt-3"
-                            style="background-color: rgb(10,58,143); height: 44px; width: 142px; border-radius: 8px;">
+                            style="background-color: rgb(10,58,143); height: 44px; width: 142px; border-radius: 8px;color:white;">
                             Contact Us <i class="fas fa-arrow-right arrow-icon"></i>
                         </a>
                     </div>
-                    <!-- Second Div -->
-                    <div class="col-12 d-flex flex-column align-items-center">
-                        <img src="image/Group 7.png" alt="Group Illustration" class="mb-3"
-                            style="width: 314px; height: 272px; margin-top: 24px ;">
-                        <div class="trusted-text  box1"
-                            style="width: 269px; height: 58px;   text-align: center; margin-top: 32px;">
-                            <img src="image/avtar.png" alt="Trusted Icon" style="width: 64px; height: 32px; ;">
-                            <p
-                                style="font-family: 'Roboto', sans-serif; font-size: 13px; font-weight: 400; line-height: 18.2px; letter-spacing: 0.38px; text-align: left; color: #1B1B1E; padding-top: 8px;">
-                                Trusted by 1000+ people around the world.
-                            </p>
-                        </div>
-                    </div>
+               
                 </div>
             </div>
     </section>
@@ -71,7 +72,7 @@
                     </div>
                     <div class="col-md-3 text-center contact">
                         <a href="https://wa.me/923186362759" target="_blank" class="mt-3"
-                            style="background-color: rgb(10,58,143); height: 44px; width: 142px; border-radius: 8px;">
+                            style="background-color: rgb(10,58,143); height: 44px; width: 142px; border-radius: 8px;color:white;">
                             Contact Us <i class="fas fa-arrow-right arrow-icon"></i>
                         </a>
                     </div>

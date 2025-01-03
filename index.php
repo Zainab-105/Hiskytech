@@ -66,6 +66,8 @@ include('includes/connection.php')
     <!-- jQuery 3.x Slim Version CDN -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
+    <!-- Bootstrap JS with Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> <!-- Slick Carousel -->
 <script src="js/script.js"></script> <!-- Your custom JS script -->
@@ -160,6 +162,41 @@ $(document).ready(function() {
             ]
         });
 
+        document.addEventListener("DOMContentLoaded", () => {
+    const statsSection = document.querySelector(".stats");
+    const counters = document.querySelectorAll(".stat-item h3");
+
+    const animateCounters = () => {
+        counters.forEach(counter => {
+            const target = +counter.getAttribute("data-target");
+            let count = 0;
+            const increment = target / 100; // Adjust speed by changing divisor
+
+            const updateCounter = () => {
+                count += increment;
+                if (count < target) {
+                    counter.textContent = Math.ceil(count);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target; // Ensure exact final number
+                }
+            };
+            updateCounter();
+        });
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                statsSection.classList.add("visible");
+                animateCounters();
+                observer.disconnect(); // Run the animation only once
+            }
+        });
+    });
+
+    observer.observe(statsSection);
+});
 
 // on desktop view
         document.addEventListener('DOMContentLoaded', function () {

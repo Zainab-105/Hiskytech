@@ -34,8 +34,8 @@ if ($query) {
 }
 
 // Now $services array contains all the service data with their language icons
-?><section class="services desktop-section">
-<div class="container">
+?><section class="services desktop-section ">
+<div class="container slide-right">
     <div class="service-heading">
         <h2>Our Comprehensive Digital <span>Solutions for You</span></h2>
         <p>At HiSkyTech, we specialize in transforming your ideas into reality through cutting-edge technology. Our services cater to diverse needs, ensuring your digital presence stands out.</p>

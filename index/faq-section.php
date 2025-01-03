@@ -1,4 +1,4 @@
-<section class="faq-section">
+<section class="faq-section ">
     <div class="container">
         <div class="row justify-content-between">
             <!-- Questions Table -->
