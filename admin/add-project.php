@@ -23,7 +23,8 @@ include('includes/config.php');
                         <!-- Project Heading -->
                         <div class="mb-3">
                             <label for="project_heading" class="form-label">Project Heading:</label>
-                            <input type="text" id="project_heading" name="project_heading" class="form-control" required>
+                            <input type="text" id="project_heading" name="project_heading" class="form-control"
+                                required>
                         </div>
 
                         <!-- Project URL -->
@@ -35,7 +36,8 @@ include('includes/config.php');
                         <!-- Project Logo -->
                         <div class="mb-3">
                             <label for="project_logo" class="form-label">Project Logo:</label>
-                            <input type="file" id="project_logo" name="project_logo" class="form-control" accept="image/*" required>
+                            <input type="file" id="project_logo" name="project_logo" class="form-control"
+                                accept="image/*" required>
                         </div>
 
                         <!-- Field -->
@@ -43,19 +45,26 @@ include('includes/config.php');
                             <label for="field" class="form-label">Field:</label>
                             <input type="text" id="field" name="field" class="form-control" required>
                         </div>
-
+                        <!-- Field -->
+                        <div class="mb-3">
+                        <label for="case-study-file" class="form-label">Upload Your Case Study (PDF/DOCX):</label><br>
+                        <input type="file" id="case-study-file" name="case_study_file" class="form-control" accept=".pdf,.doc,.docx" required><br>
+                        </div>
                         <!-- Description -->
                         <div class="mb-3">
                             <label for="description" class="form-label">Description:</label>
-                            <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
+                            <textarea id="description" name="description" class="form-control" rows="4"
+                                required></textarea>
                         </div>
 
                         <!-- Problem Statements -->
                         <div id="problem-statements">
                             <label class="form-label">Problem Statements:</label>
                             <div class="input-group mb-3">
-                                <input type="text" name="problem_statements[]" class="form-control" placeholder="Problem Statement" required>
-                                <button type="button" class="btn btn-secondary" onclick="addProblemStatement()">Add More</button>
+                                <input type="text" name="problem_statements[]" class="form-control"
+                                    placeholder="Problem Statement" required>
+                                <button type="button" class="btn btn-secondary" onclick="addProblemStatement()">Add
+                                    More</button>
                             </div>
                         </div>
 
@@ -63,8 +72,10 @@ include('includes/config.php');
                         <div id="solutions">
                             <label class="form-label">Solutions Provided:</label>
                             <div class="input-group mb-3">
-                                <input type="text" name="solutions[]" class="form-control" placeholder="Solution Provided" required>
-                                <button type="button" class="btn btn-secondary" onclick="addSolution()">Add More</button>
+                                <input type="text" name="solutions[]" class="form-control"
+                                    placeholder="Solution Provided" required>
+                                <button type="button" class="btn btn-secondary" onclick="addSolution()">Add
+                                    More</button>
                             </div>
                         </div>
 
@@ -73,8 +84,10 @@ include('includes/config.php');
                             <label class="form-label">Key Features and Functionalities:</label>
                             <div class="input-group mb-3">
 
-                                <textarea name="features[]" rows="8" class="form-control editor" placeholder="Feature Description"></textarea>
-                                <input type="file" name="feature_images[0][]" class="form-control" accept="image/*" multiple required>
+                                <textarea name="features[]" rows="8" class="form-control editor"
+                                    placeholder="Feature Description"></textarea>
+                                <input type="file" name="feature_images[0][]" class="form-control" accept="image/*"
+                                    multiple required>
                                 <button type="button" class="btn btn-secondary" onclick="addFeature()">Add More</button>
                             </div>
                         </div>
@@ -82,15 +95,18 @@ include('includes/config.php');
                         <!-- Project Overview -->
                         <div class="mb-3">
                             <label for="project_overview" class="form-label">Project Overview Image:</label>
-                            <input type="file" id="project_overview" name="project_overview" class="form-control" accept="image/*" required>
+                            <input type="file" id="project_overview" name="project_overview" class="form-control"
+                                accept="image/*" required>
                         </div>
 
                         <!-- Technologies -->
                         <div id="technologies">
                             <label class="form-label">Technologies Used:</label>
                             <div class="input-group mb-3">
-                                <input type="file" name="technology_images[]" class="form-control" accept="image/*" multiple required>
-                                <button type="button" class="btn btn-secondary" onclick="addTechnology()">Add More</button>
+                                <input type="file" name="technology_images[]" class="form-control" accept="image/*"
+                                    multiple required>
+                                <button type="button" class="btn btn-secondary" onclick="addTechnology()">Add
+                                    More</button>
                             </div>
                         </div>
 
@@ -127,48 +143,48 @@ include('includes/config.php');
 
         let featureIndex = 0;
 
-// Function to add new feature fields dynamically
-function addFeature() {
-    featureIndex++;
-    const container = document.getElementById('features');
-    const newInput = document.createElement('div');
-    newInput.classList.add('input-group', 'mb-3');
-    newInput.innerHTML = `
+        // Function to add new feature fields dynamically
+        function addFeature() {
+            featureIndex++;
+            const container = document.getElementById('features');
+            const newInput = document.createElement('div');
+            newInput.classList.add('input-group', 'mb-3');
+            newInput.innerHTML = `
        
         <textarea name="features[]" rows="8" class="form-control editor" placeholder="Feature Description"></textarea>
         <input type="file" name="feature_images[${featureIndex}][]" class="form-control" accept="image/*" multiple required>
         <button type="button" class="btn btn-danger" onclick="this.parentNode.remove()">Remove</button>
     `;
-    container.appendChild(newInput);
+            container.appendChild(newInput);
 
-    ClassicEditor.create(newInput.querySelector('.editor')).catch(error => console.error(error));
-}
-
-// Initialize CKEditor for the first textarea
-document.addEventListener('DOMContentLoaded', () => {
-    const editors = document.querySelectorAll('.editor');
-    editors.forEach(editor => {
-        ClassicEditor.create(editor).catch(error => console.error(error));
-    });
-});
-
-// Update all CKEditor instances' data to their respective textareas before form submission
-document.querySelector('form').addEventListener('submit', function (event) {
-    const editors = document.querySelectorAll('.editor');
-    for (const editor of editors) {
-        const ckEditorInstance = ClassicEditor.instances[editor.name];
-        if (ckEditorInstance) {
-            editor.value = ckEditorInstance.getData(); 
+            ClassicEditor.create(newInput.querySelector('.editor')).catch(error => console.error(error));
         }
 
-        // Custom validation to ensure no empty CKEditor content
-        if (!editor.value.trim()) {
-            alert('Please fill out all feature descriptions.');
-            event.preventDefault();
-            return false;
-        }
-    }
-});
+        // Initialize CKEditor for the first textarea
+        document.addEventListener('DOMContentLoaded', () => {
+            const editors = document.querySelectorAll('.editor');
+            editors.forEach(editor => {
+                ClassicEditor.create(editor).catch(error => console.error(error));
+            });
+        });
+
+        // Update all CKEditor instances' data to their respective textareas before form submission
+        document.querySelector('form').addEventListener('submit', function (event) {
+            const editors = document.querySelectorAll('.editor');
+            for (const editor of editors) {
+                const ckEditorInstance = ClassicEditor.instances[editor.name];
+                if (ckEditorInstance) {
+                    editor.value = ckEditorInstance.getData();
+                }
+
+                // Custom validation to ensure no empty CKEditor content
+                if (!editor.value.trim()) {
+                    alert('Please fill out all feature descriptions.');
+                    event.preventDefault();
+                    return false;
+                }
+            }
+        });
 
         function addTechnology() {
             const container = document.getElementById('technologies');
@@ -183,4 +199,4 @@ document.querySelector('form').addEventListener('submit', function (event) {
         }
     </script>
 
-</body> 
+</body>

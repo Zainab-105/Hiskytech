@@ -13,14 +13,14 @@
 
             <!-- Second Column: Navigation Bar -->
             <div class="col-md-8">
-    <nav class="navbar-expand-lg" style="background-color: transparent !important">
+    <nav class="navbar-expand-lg navbar" style="background-color: transparent !important">
         <div class="navbar-collapse justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="courses.php">Courses</a>
+                <a class="nav-link" href="#team">Our Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="projects.php">Projects</a>
@@ -51,9 +51,7 @@
 </ul>
 
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#our-team">Our Team</a>
-                </li>
+             
             </ul>
         </div>
     </nav>
@@ -62,9 +60,9 @@
 
             <!-- Third Column: Contact Us Button -->
             <div class="col-md-2 text-center contact">
-                <a href="#contact" class="openModalBtn mt-3"
+                <a href="#contact" class="mt-3"
                     style="background-color: rgb(10,58,143); height: 44px; width: 158px; border-radius: 8px;color:white;">
-                    SignUp or Login
+                    Book Consultation
                 </a>
             </div>
         </div>
@@ -89,7 +87,7 @@
         <a class="nav-link" href="#about-us">About Us</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="courses.php">Courses</a>
+        <a class="nav-link" href="#team">Our Team</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="projects.php">Projects</a>
@@ -122,7 +120,7 @@
         <a class="nav-link" href="#our-team">Our Team</a>
     </li>
     <li class="nav-item text-center contact">
-        <a href="#contact" class="mt-3" style="background-color: rgb(10,58,143); padding:13px 0px;width: 300px; border-radius:100px; color:white;font-size: 18px;">SignUp or Login</a>
+        <a href="#contact" class="mt-3" style="background-color: rgb(10,58,143); padding:13px 0px;width: 300px; border-radius:100px; color:white;font-size: 18px;">Book Consultation</a>
     </li>
 </ul>
 

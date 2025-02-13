@@ -17,7 +17,7 @@ if ($result) {
 // Now, $contact_info is available globally
 ?>
 
-<section class="contact-us  " style="background-color: #F6F7FC; color:#1B1B1E">
+<section class="contact-us  " style="background-color: #F6F7FC; color:#1B1B1E" id="contact">
         <div class="container">
             <!-- Desktop/Laptop View -->
             <div class="row d-flex justify-content-between align-items-start desktop-version d-none d-sm-none d-md-none d-lg-flex "
@@ -91,7 +91,7 @@ if ($result) {
 
             <!-- Mobile/Tablet View -->
             <!-- Mobile/Tablet View -->
-            <div class="row d-flex align-items-start mobile-version d-lg-none" style="display: none;">
+            <div class="row d-flex align-items-start mobile-version d-lg-none" style="display: none;" id="contact">
                 <!-- First Div -->
                 <div class="col-12 contact-info" style="
         width: 289px;

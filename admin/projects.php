@@ -43,6 +43,7 @@ include('includes/config.php');
             <th>Project Field</th>
             <th>Project Logo</th>
             <th>Project Description</th>
+            <th>Case Study</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -64,6 +65,10 @@ include('includes/config.php');
             </td>
             <td>
             <?php echo $row['description']; ?>
+<td>  <div class="container " style="width: 100%; height: 100px;">
+        <embed src="<?php echo $row['case_study_file']; ?>" type="application/pdf" width="100%" height="100%">
+        </div></td>
+
             </td>
             <td>
                 <a href="delete_project.php?id=<?= $row['id'] ?>" class="delete-btn"><i class="fas fa-trash-alt gray-icon"></i></a>

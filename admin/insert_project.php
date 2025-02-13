@@ -23,16 +23,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         move_uploaded_file($_FILES['project_overview']['tmp_name'], $project_overview_image);
     }
 
+    // Handle case study file upload (NEW)
+    $case_study_file = '';
+    if (!empty($_FILES['case_study_file']['name'])) {
+        $case_study_file = 'uploads/' . time() . '_' . $_FILES['case_study_file']['name'];
+        move_uploaded_file($_FILES['case_study_file']['tmp_name'], $case_study_file);
+    }
+
     // Begin transaction
     $conn->begin_transaction();
 
     try {
-        // Insert project details
+        // Insert project details (UPDATED QUERY)
         $stmt = $conn->prepare(
-            "INSERT INTO projects (project_name, project_heading, project_logo, field, url, description, project_overview_image) 
-            VALUES (?, ?, ?, ?, ?, ?, ?)"
+            "INSERT INTO projects (project_name, project_heading, project_logo, field, url, description, project_overview_image, case_study_file) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
         );
-        $stmt->bind_param('sssssss', $project_name, $project_heading, $project_logo, $field,$project_url, $description, $project_overview_image);
+        $stmt->bind_param('ssssssss', $project_name, $project_heading, $project_logo, $field, $project_url, $description, $project_overview_image, $case_study_file);
         $stmt->execute();
         $project_id = $stmt->insert_id;
 
@@ -77,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Insert technologies and technology images
-          if (!empty($_FILES['technology_images']['name'])) {
+        if (!empty($_FILES['technology_images']['name'])) {
             $stmt = $conn->prepare("INSERT INTO technology_images (project_id, image_path) VALUES (?, ?)");
             foreach ($_FILES['technology_images']['tmp_name'] as $index => $tmp_name) {
                 $tech_image = 'uploads/' . time() . '_' . $_FILES['technology_images']['name'][$index];
@@ -87,8 +94,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $stmt->execute();
             }
         }
-
-
 
         // Commit transaction
         $conn->commit();
