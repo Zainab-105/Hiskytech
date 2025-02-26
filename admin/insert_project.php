@@ -7,6 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $project_heading = $_POST['project_heading'];
     $field = $_POST['field'];
     $description = $_POST['description'];
+    $card_desc = $_POST['card-desc'];
     $project_url = $_POST['url']; // Added project_url field
 
     // Handle project logo upload
@@ -36,10 +37,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         // Insert project details (UPDATED QUERY)
         $stmt = $conn->prepare(
-            "INSERT INTO projects (project_name, project_heading, project_logo, field, url, description, project_overview_image, case_study_file) 
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
+            "INSERT INTO projects (project_name, project_heading, project_logo, field, url,card_desc, description, project_overview_image, case_study_file) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)"
         );
-        $stmt->bind_param('ssssssss', $project_name, $project_heading, $project_logo, $field, $project_url, $description, $project_overview_image, $case_study_file);
+        $stmt->bind_param('sssssssss', $project_name, $project_heading, $project_logo, $field, $project_url,$card_desc, $description, $project_overview_image, $case_study_file);
         $stmt->execute();
         $project_id = $stmt->insert_id;
 

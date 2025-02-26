@@ -52,6 +52,12 @@ include('includes/config.php');
                         </div>
                         <!-- Description -->
                         <div class="mb-3">
+                            <label for="card-desc" class="form-label">Card Description:</label>
+                            <textarea id="card-desc" name="card-desc" class="form-control" rows="2"
+                                required></textarea>
+                        </div>
+                        <!-- Description -->
+                        <div class="mb-3">
                             <label for="description" class="form-label">Description:</label>
                             <textarea id="description" name="description" class="form-control" rows="4"
                                 required></textarea>
